@@ -46,22 +46,22 @@
     ],
     "commands": [
       {
-        "command": "gemini.diff.accept",
-        "title": "Gemini CLI: Accept Diff",
+        "command": "ls.diff.accept",
+        "title": "LS CLI: Accept Diff",
         "icon": "$(check)"
       },
       {
-        "command": "gemini.diff.cancel",
-        "title": "Gemini CLI: Close Diff Editor",
+        "command": "ls.diff.cancel",
+        "title": "LS CLI: Close Diff Editor",
         "icon": "$(close)"
       },
       {
-        "command": "gemini-cli.runGeminiCLI",
-        "title": "Gemini CLI: Run"
+        "command": "ls-cli.runLSCLI",
+        "title": "LS CLI: Run"
       },
       {
-        "command": "gemini-cli.showNotices",
-        "title": "Gemini CLI: View Third-Party Notices"
+        "command": "ls-cli.showNotices",
+        "title": "LS CLI: View Third-Party Notices"
       }
     ],
     "menus": {

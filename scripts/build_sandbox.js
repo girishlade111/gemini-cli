@@ -81,7 +81,7 @@ const dockerFile = argv.f;
 
 if (!image.length) {
   console.warn(
-    'No default image tag specified in gemini-cli/packages/cli/package.json',
+    'No default image tag specified in ls-cli/packages/cli/package.json',
   );
 }
 
@@ -90,11 +90,11 @@ if (!argv.s) {
   execSync('npm run build --workspaces', { stdio: 'inherit' });
 }
 
-console.log('packing @google/gemini-cli ...');
+console.log('packing @ls/cli ...');
 const cliPackageDir = join('packages', 'cli');
-rmSync(join(cliPackageDir, 'dist', 'google-gemini-cli-*.tgz'), { force: true });
+rmSync(join(cliPackageDir, 'dist', 'ls-cli-*.tgz'), { force: true });
 execSync(
-  `npm pack -w @google/gemini-cli --pack-destination ./packages/cli/dist`,
+  `npm pack -w @ls/cli --pack-destination ./packages/cli/dist`,
   {
     stdio: 'ignore',
   },

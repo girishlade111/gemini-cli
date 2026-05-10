@@ -36,9 +36,9 @@ const coreNpmrcPath = path.resolve(rootDir, 'packages/core/.npmrc');
 fs.writeFileSync(coreNpmrcPath, '@ls-cli:registry=https://npm.pkg.github.com/');
 console.log('Wrote .npmrc for @ls-cli scope to packages/core/');
 
-// Update @google/ls-cli
+// Update @ls/cli
 updatePackageJson('packages/cli/package.json', (pkg) => {
-  pkg.name = '@google/ls-cli';
+  pkg.name = '@ls/cli';
   pkg.files = ['bundle/'];
   pkg.bin = {
     ls: 'bundle/ls.js',
@@ -52,14 +52,14 @@ updatePackageJson('packages/cli/package.json', (pkg) => {
   delete pkg.config; // Deletes the sandboxImageUri
 });
 
-// Update @google/ls-cli-a2a-server
+// Update @ls/a2a-server
 updatePackageJson('packages/a2a-server/package.json', (pkg) => {
-  pkg.name = '@google/ls-cli-a2a-server';
+  pkg.name = '@ls/a2a-server';
 });
 
-// Update @google/ls-cli-core
+// Update @ls/core
 updatePackageJson('packages/core/package.json', (pkg) => {
-  pkg.name = '@google/ls-cli-core';
+  pkg.name = '@ls/core';
 });
 
 console.log('Successfully prepared packages for GitHub release.');

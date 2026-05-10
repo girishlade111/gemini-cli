@@ -35,7 +35,7 @@
         "ls-cli.debug.logging.enabled": {
           "type": "boolean",
           "default": false,
-          "description": "Enable detailed logging for debugging the Gemini CLI Companion."
+          "description": "Enable detailed logging for debugging the LS CLI Companion."
         }
       }
     },

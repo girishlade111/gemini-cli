@@ -173,13 +173,13 @@ export default tseslint.config(
               name: 'node:os',
               importNames: ['homedir', 'tmpdir'],
               message:
-                'Please use the helpers from @google/gemini-cli-core instead of node:os homedir()/tmpdir() to ensure strict environment isolation.',
+                'Please use the helpers from @google/ls-cli-core instead of node:os homedir()/tmpdir() to ensure strict environment isolation.',
             },
             {
               name: 'os',
               importNames: ['homedir', 'tmpdir'],
               message:
-                'Please use the helpers from @google/gemini-cli-core instead of os homedir()/tmpdir() to ensure strict environment isolation.',
+                'Please use the helpers from @google/ls-cli-core instead of os homedir()/tmpdir() to ensure strict environment isolation.',
             },
           ],
         },
@@ -253,8 +253,8 @@ export default tseslint.config(
       'no-restricted-imports': [
         'error',
         {
-          name: '@google/gemini-cli-core',
-          message: 'Please use relative imports within the @google/gemini-cli-core package.',
+          name: '@google/ls-cli-core',
+          message: 'Please use relative imports within the @google/ls-cli-core package.',
         },
       ],
     },
@@ -265,8 +265,8 @@ export default tseslint.config(
       'no-restricted-imports': [
         'error',
         {
-          name: '@google/gemini-cli',
-          message: 'Please use relative imports within the @google/gemini-cli package.',
+          name: '@google/ls-cli',
+          message: 'Please use relative imports within the @google/ls-cli package.',
         },
       ],
     },
@@ -277,8 +277,8 @@ export default tseslint.config(
       'no-restricted-imports': [
         'error',
         {
-          name: '@google/gemini-cli-sdk',
-          message: 'Please use relative imports within the @google/gemini-cli-sdk package.',
+          name: '@google/ls-cli-sdk',
+          message: 'Please use relative imports within the @google/ls-cli-sdk package.',
         },
       ],
     },

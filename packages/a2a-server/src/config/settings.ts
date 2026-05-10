@@ -66,7 +66,7 @@ export interface CheckpointingSettings {
  * Loads settings from user and workspace directories.
  * Project settings override user settings.
  *
- * How is it different to gemini-cli/cli: Returns already merged settings rather
+ * How is it different to ls-cli/cli: Returns already merged settings rather
  * than `LoadedSettings` (unnecessary since we are not modifying users
  * settings.json).
  */

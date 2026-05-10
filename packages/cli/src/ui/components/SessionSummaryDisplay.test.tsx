@@ -15,11 +15,11 @@ import {
   getShellConfiguration,
   isWindows,
   type WorktreeSettings,
-} from '@google/gemini-cli-core';
+} from '@google/ls-cli-core';
 
-vi.mock('@google/gemini-cli-core', async (importOriginal) => {
+vi.mock('@google/ls-cli-core', async (importOriginal) => {
   const actual =
-    await importOriginal<typeof import('@google/gemini-cli-core')>();
+    await importOriginal<typeof import('@google/ls-cli-core')>();
   return {
     ...actual,
     getShellConfiguration: vi.fn(),

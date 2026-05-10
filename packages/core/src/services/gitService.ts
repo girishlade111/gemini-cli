@@ -16,8 +16,8 @@ import {
   getSecureSanitizationConfig,
 } from './environmentSanitization.js';
 
-export const SHADOW_REPO_AUTHOR_NAME = 'Gemini CLI';
-export const SHADOW_REPO_AUTHOR_EMAIL = 'gemini-cli@google.com';
+export const SHADOW_REPO_AUTHOR_NAME = 'LS CLI';
+export const SHADOW_REPO_AUTHOR_EMAIL = 'ls-cli@google.com';
 
 export class GitService {
   private projectRoot: string;

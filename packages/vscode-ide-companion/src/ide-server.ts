@@ -437,7 +437,7 @@ const createMcpServer = (
 ) => {
   const server = new McpServer(
     {
-      name: 'gemini-cli-companion-mcp-server',
+      name: 'ls-cli-companion-mcp-server',
       version: '1.0.0',
     },
     { capabilities: { logging: {} } },

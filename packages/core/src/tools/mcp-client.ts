@@ -1782,7 +1782,7 @@ export async function connectToMcpServer(
 ): Promise<Client> {
   const mcpClient = new Client(
     {
-      name: 'gemini-cli-mcp-client',
+      name: 'ls-cli-mcp-client',
       version: clientVersion,
     },
     {

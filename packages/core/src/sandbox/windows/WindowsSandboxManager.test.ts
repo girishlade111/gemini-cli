@@ -405,7 +405,7 @@ describe('WindowsSandboxManager', () => {
   it('includes non-existent forbidden paths in the forbidden manifest', async () => {
     const missingPath = path.join(
       os.tmpdir(),
-      'gemini-cli-test-missing',
+      'ls-cli-test-missing',
       'does-not-exist.txt',
     );
 

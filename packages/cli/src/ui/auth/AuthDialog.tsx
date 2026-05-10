@@ -18,7 +18,7 @@ import {
   AuthType,
   clearCachedCredentialFile,
   type Config,
-} from '@google/gemini-cli-core';
+} from '@google/ls-cli-core';
 import { useKeypress } from '../hooks/useKeypress.js';
 import { AuthState } from '../types.js';
 import { validateAuthMethodWithSettings } from './useAuth.js';
@@ -199,7 +199,7 @@ export function AuthDialog({
         alignItems="flex-start"
       >
         <Text color={theme.text.primary}>
-          Logging in with Google... Restarting Gemini CLI to continue.
+          Logging in with Google... Restarting LS CLI to continue.
         </Text>
       </Box>
     );
@@ -244,7 +244,7 @@ export function AuthDialog({
         </Box>
         <Box marginTop={1}>
           <Text color={theme.text.primary}>
-            Terms of Services and Privacy Notice for Gemini CLI
+            Terms of Services and Privacy Notice for LS CLI
           </Text>
         </Box>
         <Box marginTop={1}>

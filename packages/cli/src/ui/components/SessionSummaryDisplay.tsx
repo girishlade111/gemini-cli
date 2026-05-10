@@ -12,7 +12,7 @@ import {
   escapeShellArg,
   getShellConfiguration,
   isWindows,
-} from '@google/gemini-cli-core';
+} from '@google/ls-cli-core';
 
 interface SessionSummaryDisplayProps {
   duration: string;

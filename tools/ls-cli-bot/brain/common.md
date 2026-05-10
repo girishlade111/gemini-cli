@@ -34,24 +34,24 @@ When analyzing data and proposing solutions, prioritize the following in order:
 
 ### LLM-Powered Classification
 
-You are explicitly authorized to use the Gemini CLI (`bundle/gemini.js`) within
+You are explicitly authorized to use the LS CLI (`bundle/gemini.js`) within
 your proposed scripts to perform classification tasks (e.g., sentiment analysis,
 advanced triage, or semantic labeling).
 
 - **Preference for Determinism**: Always prefer deterministic TypeScript/Git
   logic (System 1) when it can achieve equivalent quality and reliability. Use
   the LLM only when heuristic or semantic understanding is required.
-- **Strict Role Separation**: Use Gemini CLI ONLY for **classification** (data
+- **Strict Role Separation**: Use LS CLI ONLY for **classification** (data
   labeling). Do not use it for execution or decision-making.
 - **Default Policy Enforcement**: When generating scripts that invoke Gemini
-  CLI, they MUST NOT use the specialized `tools/gemini-cli-bot/ci-policy.toml`.
+  CLI, they MUST NOT use the specialized `tools/ls-cli-bot/ci-policy.toml`.
   They should rely on the default repository policies.
 
 ## Memory Preservation & State
 
-- **Findings and State**: Recorded in `tools/gemini-cli-bot/lessons-learned.md`.
+- **Findings and State**: Recorded in `tools/ls-cli-bot/lessons-learned.md`.
 - **Memory Preservation**: You MUST update
-  `tools/gemini-cli-bot/lessons-learned.md` using the **Structured Markdown**
+  `tools/ls-cli-bot/lessons-learned.md` using the **Structured Markdown**
   format below. You are strictly forbidden from summarizing active tasks or
   design details.
 - **Memory Pruning**: To prevent context bloat, maintain a rolling window:
@@ -105,7 +105,7 @@ or configuration changes:
 4.  **Stage Files**: Use `git add <file>` to stage files for the PR. **DO NOT**
     stage internal bot files like `pr-description.md`, `lessons-learned.md`,
     branch-name.txt, pr-comment.md, pr-number.txt, issue-comment.md, or anything
-    in `tools/gemini-cli-bot/history/`.
+    in `tools/ls-cli-bot/history/`.
 
 ### UNBLOCKING PROTOCOL (Recovery & Persistence)
 

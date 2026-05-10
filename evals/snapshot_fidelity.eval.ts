@@ -10,8 +10,8 @@ import {
   type ComponentEvalCase,
 } from './component-test-helper.js';
 import { type EvalPolicy } from './test-helper.js';
-import { SnapshotGenerator } from '@google/gemini-cli-core';
-import { NodeType, type ConcreteNode } from '@google/gemini-cli-core';
+import { SnapshotGenerator } from '@google/ls-cli-core';
+import { NodeType, type ConcreteNode } from '@google/ls-cli-core';
 import { LLMJudge } from './llm-judge.js';
 
 function snapshotEvalTest(policy: EvalPolicy, evalCase: ComponentEvalCase) {

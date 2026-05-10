@@ -1,8 +1,8 @@
 import { Tabs, TabItem } from '@astrojs/starlight/components';
 
-# Gemini CLI installation, execution, and releases
+# LS CLI installation, execution, and releases
 
-This document provides an overview of Gemini CLI's system requirements,
+This document provides an overview of LS CLI's system requirements,
 installation methods, and release types.
 
 ## Recommended system specifications
@@ -20,10 +20,10 @@ installation methods, and release types.
   [Gemini Code Assist supported locations](https://developers.google.com/gemini-code-assist/resources/available-locations#americas)
 - **Internet connection required**
 
-## Install Gemini CLI
+## Install LS CLI
 
-We recommend most users install Gemini CLI using one of the following
-installation methods. Note that Gemini CLI comes pre-installed on
+We recommend most users install LS CLI using one of the following
+installation methods. Note that LS CLI comes pre-installed on
 [**Cloud Shell**](https://docs.cloud.google.com/shell/docs) and
 [**Cloud Workstations**](https://cloud.google.com/workstations).
 
@@ -33,7 +33,7 @@ installation methods. Note that Gemini CLI comes pre-installed on
   Install globally with npm:
 
   ```bash
-  npm install -g @google/gemini-cli
+  npm install -g @google/ls-cli
   ```
 
   </TabItem>
@@ -42,7 +42,7 @@ installation methods. Note that Gemini CLI comes pre-installed on
   Install globally with Homebrew:
 
   ```bash
-  brew install gemini-cli
+  brew install ls-cli
   ```
 
   </TabItem>
@@ -51,7 +51,7 @@ installation methods. Note that Gemini CLI comes pre-installed on
   Install globally with MacPorts:
 
   ```bash
-  sudo port install gemini-cli
+  sudo port install ls-cli
   ```
 
   </TabItem>
@@ -64,16 +64,16 @@ installation methods. Note that Gemini CLI comes pre-installed on
   conda create -y -n gemini_env -c conda-forge nodejs
   conda activate gemini_env
 
-  # Install Gemini CLI globally via npm (inside the environment)
-  npm install -g @google/gemini-cli
+  # Install LS CLI globally via npm (inside the environment)
+  npm install -g @google/ls-cli
   ```
 
   </TabItem>
 </Tabs>
 
-## Run Gemini CLI
+## Run LS CLI
 
-For most users, we recommend running Gemini CLI with the `gemini` command:
+For most users, we recommend running LS CLI with the `gemini` command:
 
 ```bash
 gemini
@@ -82,29 +82,29 @@ gemini
 For a list of options and additional commands, see the
 [CLI cheatsheet](../cli/cli-reference.md).
 
-You can also run Gemini CLI using one of the following advanced methods:
+You can also run LS CLI using one of the following advanced methods:
 
 <Tabs>
   <TabItem label="npx">
 
-  Run instantly with npx. You can run Gemini CLI without permanent installation.
+  Run instantly with npx. You can run LS CLI without permanent installation.
 
   ```bash
   # Using npx (no installation required)
-  npx @google/gemini-cli
+  npx @google/ls-cli
   ```
 
   You can also execute the CLI directly from the main branch on GitHub, which is
   helpful for testing features still in development:
 
   ```bash
-  npx https://github.com/google-gemini/gemini-cli
+  npx https://github.com/google-gemini/ls-cli
   ```
 
   </TabItem>
   <TabItem label="Docker/Podman Sandbox">
 
-  For security and isolation, Gemini CLI can be run inside a container. This is
+  For security and isolation, LS CLI can be run inside a container. This is
   the default way that the CLI executes tools that might have side effects.
 
   - **Directly from the registry:** You can run the published sandbox image
@@ -112,9 +112,9 @@ You can also run Gemini CLI using one of the following advanced methods:
     to run the CLI.
     ```bash
     # Run the published sandbox image
-    docker run --rm -it us-docker.pkg.dev/gemini-code-dev/gemini-cli/sandbox:0.1.1
+    docker run --rm -it us-docker.pkg.dev/gemini-code-dev/ls-cli/sandbox:0.1.1
     ```
-  - **Using the `--sandbox` flag:** If you have Gemini CLI installed locally
+  - **Using the `--sandbox` flag:** If you have LS CLI installed locally
     (using the standard installation described above), you can instruct it to run
     inside the sandbox container.
     ```bash
@@ -157,7 +157,7 @@ You can also run Gemini CLI using one of the following advanced methods:
 
 ## Releases
 
-Gemini CLI has three release channels: stable, preview, and nightly. For most
+LS CLI has three release channels: stable, preview, and nightly. For most
 users, we recommend the stable release, which is the default installation.
 
 <Tabs>
@@ -170,8 +170,8 @@ users, we recommend the stable release, which is the default installation.
 
   ```bash
   # Both commands install the latest stable release.
-  npm install -g @google/gemini-cli
-  npm install -g @google/gemini-cli@latest
+  npm install -g @google/ls-cli
+  npm install -g @google/ls-cli@latest
   ```
 
   </TabItem>
@@ -182,7 +182,7 @@ users, we recommend the stable release, which is the default installation.
   preview release by using the `preview` tag:
 
   ```bash
-  npm install -g @google/gemini-cli@preview
+  npm install -g @google/ls-cli@preview
   ```
 
   </TabItem>
@@ -194,7 +194,7 @@ users, we recommend the stable release, which is the default installation.
   installing with the `nightly` tag:
 
   ```bash
-  npm install -g @google/gemini-cli@nightly
+  npm install -g @google/ls-cli@nightly
   ```
 
   </TabItem>

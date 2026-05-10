@@ -143,7 +143,7 @@ export class Task {
 
   // Note: `getAllMCPServerStatuses` retrieves the status of all MCP servers for the entire
   // process. This is not scoped to the individual task but reflects the global connection
-  // state managed within the @gemini-cli/core module.
+  // state managed within the @ls-cli/core module.
   async getMetadata(): Promise<TaskMetadata> {
     const loopContext: AgentLoopContext = this.config;
     const toolRegistry = loopContext.toolRegistry;

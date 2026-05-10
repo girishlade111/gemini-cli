@@ -20,7 +20,7 @@ try {
     .replace(/\.git$/, '')
     .trim();
 } catch (e) {
-  REPO = 'google-gemini/gemini-cli';
+  REPO = 'google-gemini/ls-cli';
 }
 
 const FAILED_FILES = new Set();
@@ -77,13 +77,13 @@ function generateTestCommand(failedFilesMap) {
       ['Job Error', 'Unknown File', 'Build Error', 'Lint Error'].includes(file)
     )
       continue;
-    let workspace = '@google/gemini-cli';
+    let workspace = '@google/ls-cli';
     let relPath = file;
     if (file.startsWith('packages/core/')) {
-      workspace = '@google/gemini-cli-core';
+      workspace = '@google/ls-cli-core';
       relPath = file.replace('packages/core/', '');
     } else if (file.startsWith('packages/cli/')) {
-      workspace = '@google/gemini-cli';
+      workspace = '@google/ls-cli';
       relPath = file.replace('packages/cli/', '');
     }
     relPath = relPath.replace(/^.*packages\/[^\/]+\//, '');

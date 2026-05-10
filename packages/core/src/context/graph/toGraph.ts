@@ -155,7 +155,7 @@ export class ContextGraphBuilder {
         const text = msg.parts[0].text;
         if (
           text?.startsWith('<session_context>') &&
-          text?.includes('This is the Gemini CLI')
+          text?.includes('This is the LS CLI')
         ) {
           debugLogger.log(
             '[ContextGraphBuilder] Skipping legacy environment header turn from graph.',

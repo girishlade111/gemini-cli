@@ -134,9 +134,9 @@ export class Storage {
     if (os.platform() === 'darwin') {
       return '/Library/Application Support/GeminiCli';
     } else if (os.platform() === 'win32') {
-      return 'C:\\ProgramData\\gemini-cli';
+      return 'C:\\ProgramData\\ls-cli';
     } else {
-      return '/etc/gemini-cli';
+      return '/etc/ls-cli';
     }
   }
 

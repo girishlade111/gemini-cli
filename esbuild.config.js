@@ -63,7 +63,7 @@ const external = [
   '@lydell/node-pty-win32-arm64',
   '@lydell/node-pty-win32-x64',
   '@github/keytar',
-  '@google/gemini-cli-devtools',
+  '@google/ls-cli-devtools',
 ];
 
 const baseConfig = {

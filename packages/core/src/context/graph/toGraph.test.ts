@@ -19,7 +19,7 @@ describe('ContextGraphBuilder', () => {
           role: 'user',
           parts: [
             {
-              text: '<session_context>\nThis is the Gemini CLI\nSome context...',
+              text: '<session_context>\nThis is the LS CLI\nSome context...',
             },
           ],
         },

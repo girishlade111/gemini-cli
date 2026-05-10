@@ -1,6 +1,6 @@
-# Gemini CLI cheatsheet
+# LS CLI cheatsheet
 
-This page provides a reference for commonly used Gemini CLI commands, options,
+This page provides a reference for commonly used LS CLI commands, options,
 and parameters.
 
 ## CLI commands

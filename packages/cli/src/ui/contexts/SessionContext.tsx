@@ -18,8 +18,8 @@ import type {
   ModelMetrics,
   RoleMetrics,
   ToolCallStats,
-} from '@google/gemini-cli-core';
-import { uiTelemetryService } from '@google/gemini-cli-core';
+} from '@google/ls-cli-core';
+import { uiTelemetryService } from '@google/ls-cli-core';
 
 export enum ToolCallDecision {
   ACCEPT = 'accept',

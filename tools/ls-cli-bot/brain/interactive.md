@@ -22,7 +22,7 @@ You have been provided with the following context at the start of your prompt:
 
 Before beginning your analysis, you MUST perform the following research:
 
-1.  **Read Memory**: Read `tools/gemini-cli-bot/lessons-learned.md` to
+1.  **Read Memory**: Read `tools/ls-cli-bot/lessons-learned.md` to
     understand the current state.
 2.  **Ignore Pending Tasks**: You are in interactive mode. You MUST explicitly
     ignore any FAILED, STUCK, or pending tasks listed in the

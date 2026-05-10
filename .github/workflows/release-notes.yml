@@ -22,7 +22,7 @@ on:
 
 jobs:
   generate-release-notes:
-    if: "github.repository == 'google-gemini/gemini-cli'"
+    if: "github.repository == 'google-gemini/ls-cli'"
     runs-on: 'ubuntu-latest'
     permissions:
       contents: 'write'
@@ -69,7 +69,7 @@ jobs:
 
       - name: 'Generate Changelog with Gemini'
         if: "steps.validate_version.outputs.CONTINUE == 'true'"
-        uses: 'google-github-actions/run-gemini-cli@a3bf79042542528e91937b3a3a6fbc4967ee3c31' # ratchet:google-github-actions/run-gemini-cli@v0
+        uses: 'google-github-actions/run-ls-cli@a3bf79042542528e91937b3a3a6fbc4967ee3c31' # ratchet:google-github-actions/run-ls-cli@v0
         env:
           GEMINI_CLI_TRUST_WORKSPACE: true
         with:
@@ -101,5 +101,5 @@ jobs:
             Related to #18505
           branch: 'changelog-${{ steps.release_info.outputs.VERSION }}'
           base: 'main'
-          team-reviewers: 'gemini-cli-docs, gemini-cli-maintainers'
+          team-reviewers: 'ls-cli-docs, ls-cli-maintainers'
           delete-branch: true

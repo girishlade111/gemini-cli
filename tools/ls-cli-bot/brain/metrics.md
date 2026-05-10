@@ -11,9 +11,9 @@ maintainability.
 ## Context
 
 - Time-series repository metrics are stored in
-  `tools/gemini-cli-bot/history/metrics-timeseries.csv`.
+  `tools/ls-cli-bot/history/metrics-timeseries.csv`.
 - Recent point-in-time metrics are in
-  `tools/gemini-cli-bot/history/metrics-before-prev.csv` and the current run's
+  `tools/ls-cli-bot/history/metrics-before-prev.csv` and the current run's
   metrics.
 - **Preservation Status**: Check the `ENABLE_PRS` environment variable. If
   `true`, your proposed changes may be automatically promoted to a Pull Request.
@@ -25,11 +25,11 @@ maintainability.
 Before beginning your analysis, you MUST perform the following research to
 synchronize with previous sessions:
 
-1.  **Read Memory**: Read `tools/gemini-cli-bot/lessons-learned.md` to
+1.  **Read Memory**: Read `tools/ls-cli-bot/lessons-learned.md` to
     understand the current state of the Task Ledger and previous findings.
 2.  **Verify PR Status**: If the Task Ledger indicates an active PR (status
     `IN_PROGRESS` or `SUBMITTED`), use the GitHub CLI (`gh pr view <number>` or
-    `gh pr list --author gemini-cli-robot`) to check its status and CI results.
+    `gh pr list --author ls-cli-robot`) to check its status and CI results.
 3.  **Update Ledger Status**:
     - If an active PR has been merged, mark it `DONE`.
     - If it was rejected or closed, mark it `FAILED` and investigate the reason
@@ -41,7 +41,7 @@ synchronize with previous sessions:
 
 ### 1. Read & Identify Trends (Time-Series Analysis)
 
-- Load and analyze `tools/gemini-cli-bot/history/metrics-timeseries.csv`.
+- Load and analyze `tools/ls-cli-bot/history/metrics-timeseries.csv`.
 - Identify significant anomalies or deteriorating trends over time (e.g.,
   `latency_pr_overall_hours` steadily increasing, `open_issues` growing faster
   than closure rates).
@@ -85,12 +85,12 @@ Before proposing an intervention, accurately identify the blocker:
 ### 5. Policy Critique & Evaluation
 
 - **Review Existing Policies**: Examine the existing automation in
-  `.github/workflows/` and scripts in `tools/gemini-cli-bot/reflexes/scripts/`.
+  `.github/workflows/` and scripts in `tools/ls-cli-bot/reflexes/scripts/`.
 - **Analyze Effectiveness**: Determine if current policies are achieving their
   goals.
 
 ### 6. Record Findings & Propose Actions
 
 - Use the Memory & State format provided in the common rules.
-- When modifying scripts in `tools/gemini-cli-bot/metrics/scripts/`, you MUST
+- When modifying scripts in `tools/ls-cli-bot/metrics/scripts/`, you MUST
   NEVER change the output format (comma-separated values to stdout).

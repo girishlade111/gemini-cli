@@ -1,6 +1,6 @@
 # Auto Memory
 
-Auto Memory is an experimental feature that mines your past Gemini CLI sessions
+Auto Memory is an experimental feature that mines your past LS CLI sessions
 in the background and proposes durable memory updates and reusable
 [Agent Skills](./skills.md). You review each candidate before it becomes
 available to future sessions: apply memory updates, promote skills, or discard
@@ -12,7 +12,7 @@ anything you do not want.
 
 ## Overview
 
-Every session you run with Gemini CLI is recorded locally as a transcript. Auto
+Every session you run with LS CLI is recorded locally as a transcript. Auto
 Memory scans those transcripts for durable facts, preferences, workflow
 constraints, and procedural patterns that recur across sessions. It can draft
 memory updates as unified diff `.patch` files and draft reusable procedures as
@@ -37,7 +37,7 @@ them without your approval.
 
 ## Prerequisites
 
-- Gemini CLI installed and authenticated.
+- LS CLI installed and authenticated.
 - At least one idle project session with 10 or more user messages. Auto Memory
   ignores active, trivial, and sub-agent sessions.
 
@@ -59,7 +59,7 @@ Auto Memory is off by default. Enable it in your settings file:
     }
     ```
 
-3.  Restart Gemini CLI. The flag requires a restart because the extraction
+3.  Restart LS CLI. The flag requires a restart because the extraction
     service starts during session boot.
 
 ## How Auto Memory works
@@ -85,7 +85,7 @@ UI, consume your interactive turns, or surface tool prompts.
 5.  **Patch validation.** Skill update patches are parsed and dry-run before
     they are surfaced. Memory patches are parsed, target-allowlisted, and
     applied atomically only when you approve them from the inbox.
-6.  **Notification.** When a run produces new candidates, Gemini CLI surfaces an
+6.  **Notification.** When a run produces new candidates, LS CLI surfaces an
     inline message telling you how many items are waiting.
 
 ## How to review extracted items
@@ -115,7 +115,7 @@ session.
 ## How to disable Auto Memory
 
 To turn off background extraction, set the flag back to `false` in your settings
-file and restart Gemini CLI:
+file and restart LS CLI:
 
 ```json
 {

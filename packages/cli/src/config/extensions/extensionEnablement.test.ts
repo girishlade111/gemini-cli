@@ -317,16 +317,16 @@ describe('ExtensionEnablementManager', () => {
 
   it('should correctly prioritize more specific enable rules', () => {
     manager.disable('ext-test', true, '/Users/chrstn');
-    manager.enable('ext-test', true, '/Users/chrstn/gemini-cli');
+    manager.enable('ext-test', true, '/Users/chrstn/ls-cli');
 
-    expect(manager.isEnabled('ext-test', '/Users/chrstn/gemini-cli')).toBe(
+    expect(manager.isEnabled('ext-test', '/Users/chrstn/ls-cli')).toBe(
       true,
     );
   });
 
   it('should not disable subdirectories if includeSubdirs is false', () => {
     manager.disable('ext-test', false, '/Users/chrstn');
-    expect(manager.isEnabled('ext-test', '/Users/chrstn/gemini-cli')).toBe(
+    expect(manager.isEnabled('ext-test', '/Users/chrstn/ls-cli')).toBe(
       true,
     );
   });

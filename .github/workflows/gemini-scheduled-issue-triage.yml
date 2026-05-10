@@ -25,7 +25,7 @@ jobs:
   triage-issues:
     timeout-minutes: 60
     if: |-
-      ${{ github.repository == 'google-gemini/gemini-cli' }}
+      ${{ github.repository == 'google-gemini/ls-cli' }}
     runs-on: 'ubuntu-latest'
     steps:
       - name: 'Checkout'
@@ -98,7 +98,7 @@ jobs:
           fi
           echo "✅ Found ${ISSUE_COUNT} unique issues to triage! 🎯"
 
-      - name: 'Create Gemini CLI Experiments Override'
+      - name: 'Create LS CLI Experiments Override'
         if: |-
           steps.get_issue_from_event.outputs.has_issues == 'true' || steps.find_issues.outputs.has_issues == 'true'
         run: |
@@ -132,7 +132,7 @@ jobs:
       - name: 'Run Gemini Issue Analysis'
         if: |-
           steps.get_issue_from_event.outputs.has_issues == 'true' || steps.find_issues.outputs.has_issues == 'true'
-        uses: 'google-github-actions/run-gemini-cli@a3bf79042542528e91937b3a3a6fbc4967ee3c31' # ratchet:google-github-actions/run-gemini-cli@v0
+        uses: 'google-github-actions/run-ls-cli@a3bf79042542528e91937b3a3a6fbc4967ee3c31' # ratchet:google-github-actions/run-ls-cli@v0
         id: 'gemini_issue_analysis'
         env:
           GITHUB_TOKEN: '' # Do not pass any auth token here since this runs on untrusted inputs
@@ -238,12 +238,12 @@ jobs:
             Categorization Guidelines (Priority):
             P0 - Urgent Blocking Issues:
               - DO NOT APPLY THIS LABEL AUTOMATICALLY. Use status/manual-triage instead.
-              - Definition: Urgent, block a significant percentage of the user base, and prevent frequent use of the Gemini CLI.
+              - Definition: Urgent, block a significant percentage of the user base, and prevent frequent use of the LS CLI.
               - This includes core stability blockers (e.g., authentication failures, broken upgrades), critical crashes, and P0 security vulnerabilities.
               - Impact: Blocks development or testing for the entire team; Major security vulnerability; Causes data loss or corruption with no workaround; Crashes the application or makes a core feature completely unusable for all or most users.
               - Qualifier: Is the main function of the software broken?
             P1 - High-Impact Issues:
-              - Definition: Affect a large number of users, blocking them from using parts of the Gemini CLI, or make the CLI frequently unusable even with workarounds available.
+              - Definition: Affect a large number of users, blocking them from using parts of the LS CLI, or make the CLI frequently unusable even with workarounds available.
               - Impact: A core feature is broken or behaving incorrectly for a large number of users or use cases; Severe performance degradation; No straightforward workaround exists.
               - Qualifier: Is a key feature unusable or giving very wrong results?
             P2 - Significant Issues:
@@ -262,7 +262,7 @@ jobs:
             area/core: User Interface, OS Support, Core Functionality
             area/documentation: End-user and contributor-facing documentation, website-related
             area/enterprise: Telemetry, Policy, Quota / Licensing
-            area/extensions: Gemini CLI extensions capability
+            area/extensions: LS CLI extensions capability
             area/non-interactive: GitHub Actions, SDK, 3P Integrations, Shell Scripting, Command line automation
             area/platform: Build infra, Release mgmt, Testing, Eval infra, Capacity, Quota mgmt
             area/security: security related issues

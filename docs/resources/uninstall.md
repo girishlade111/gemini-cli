@@ -28,13 +28,12 @@ Remove-Item -Path (Join-Path $env:LocalAppData "npm-cache\_npx") -Recurse -Force
 
 ## Method 2: Using npm (global install)
 
-If you installed the CLI globally (for example,
-`npm install -g @google/ls-cli`), use the `npm uninstall` command with the `-g`
-flag to remove it.
+If you installed the CLI globally (for example, `npm install -g @ls/cli`), use
+the `npm uninstall` command with the `-g`
 
-```bash
-npm uninstall -g @google/ls-cli
-```
+npm uninstall -g @ls/cli
+
+````
 
 This command completely removes the package from your system.
 
@@ -45,7 +44,7 @@ If you installed the CLI globally using Homebrew (for example,
 
 ```bash
 brew uninstall ls-cli
-```
+````
 
 ## Method 4: MacPorts
 

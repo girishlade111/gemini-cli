@@ -277,69 +277,69 @@ ls
 
 ### Getting Started
 
-- [**Quickstart Guide**](https://www.geminicli.com/docs/get-started) - Get up
+- [**Quickstart Guide**](https://www.lscli.com/docs/get-started) - Get up
   and running quickly.
-- [**Authentication Setup**](https://www.geminicli.com/docs/get-started/authentication) -
+- [**Authentication Setup**](https://www.lscli.com/docs/get-started/authentication) -
   Detailed auth configuration.
-- [**Configuration Guide**](https://www.geminicli.com/docs/reference/configuration) -
+- [**Configuration Guide**](https://www.lscli.com/docs/reference/configuration) -
   Settings and customization.
-- [**Keyboard Shortcuts**](https://www.geminicli.com/docs/reference/keyboard-shortcuts) -
+- [**Keyboard Shortcuts**](https://www.lscli.com/docs/reference/keyboard-shortcuts) -
   Productivity tips.
 
 ### Core Features
 
-- [**Commands Reference**](https://www.geminicli.com/docs/reference/commands) -
+- [**Commands Reference**](https://www.lscli.com/docs/reference/commands) -
   All slash commands (`/help`, `/chat`, etc).
-- [**Custom Commands**](https://www.geminicli.com/docs/cli/custom-commands) -
+- [**Custom Commands**](https://www.lscli.com/docs/cli/custom-commands) -
   Create your own reusable commands.
-- [**Context Files (GEMINI.md)**](https://www.geminicli.com/docs/cli/gemini-md) -
-  Provide persistent context to Gemini CLI.
-- [**Checkpointing**](https://www.geminicli.com/docs/cli/checkpointing) - Save
+- [**Context Files (GEMINI.md)**](https://www.lscli.com/docs/cli/gemini-md) -
+  Provide persistent context to LS CLI.
+- [**Checkpointing**](https://www.lscli.com/docs/cli/checkpointing) - Save
   and resume conversations.
-- [**Token Caching**](https://www.geminicli.com/docs/cli/token-caching) -
+- [**Token Caching**](https://www.lscli.com/docs/cli/token-caching) -
   Optimize token usage.
 
 ### Tools & Extensions
 
-- [**Built-in Tools Overview**](https://www.geminicli.com/docs/reference/tools)
-  - [File System Operations](https://www.geminicli.com/docs/tools/file-system)
-  - [Shell Commands](https://www.geminicli.com/docs/tools/shell)
-  - [Web Fetch & Search](https://www.geminicli.com/docs/tools/web-fetch)
-- [**MCP Server Integration**](https://www.geminicli.com/docs/tools/mcp-server) -
+- [**Built-in Tools Overview**](https://www.lscli.com/docs/reference/tools)
+  - [File System Operations](https://www.lscli.com/docs/tools/file-system)
+  - [Shell Commands](https://www.lscli.com/docs/tools/shell)
+  - [Web Fetch & Search](https://www.lscli.com/docs/tools/web-fetch)
+- [**MCP Server Integration**](https://www.lscli.com/docs/tools/mcp-server) -
   Extend with custom tools.
-- [**Custom Extensions**](https://geminicli.com/docs/extensions/writing-extensions) -
+- [**Custom Extensions**](https://lscli.com/docs/extensions/writing-extensions) -
   Build and share your own commands.
 
 ### Advanced Topics
 
-- [**Headless Mode (Scripting)**](https://www.geminicli.com/docs/cli/headless) -
-  Use Gemini CLI in automated workflows.
-- [**IDE Integration**](https://www.geminicli.com/docs/ide-integration) - VS
+- [**Headless Mode (Scripting)**](https://www.lscli.com/docs/cli/headless) -
+  Use LS CLI in automated workflows.
+- [**IDE Integration**](https://www.lscli.com/docs/ide-integration) - VS
   Code companion.
-- [**Sandboxing & Security**](https://www.geminicli.com/docs/cli/sandbox) - Safe
+- [**Sandboxing & Security**](https://www.lscli.com/docs/cli/sandbox) - Safe
   execution environments.
-- [**Trusted Folders**](https://www.geminicli.com/docs/cli/trusted-folders) -
+- [**Trusted Folders**](https://www.lscli.com/docs/cli/trusted-folders) -
   Control execution policies by folder.
-- [**Enterprise Guide**](https://www.geminicli.com/docs/cli/enterprise) - Deploy
+- [**Enterprise Guide**](https://www.lscli.com/docs/cli/enterprise) - Deploy
   and manage in a corporate environment.
-- [**Telemetry & Monitoring**](https://www.geminicli.com/docs/cli/telemetry) -
+- [**Telemetry & Monitoring**](https://www.lscli.com/docs/cli/telemetry) -
   Usage tracking.
-- [**Tools reference**](https://www.geminicli.com/docs/reference/tools) -
+- [**Tools reference**](https://www.lscli.com/docs/reference/tools) -
   Built-in tools overview.
-- [**Local development**](https://www.geminicli.com/docs/local-development) -
+- [**Local development**](https://www.lscli.com/docs/local-development) -
   Local development tooling.
 
 ### Troubleshooting & Support
 
-- [**Troubleshooting Guide**](https://www.geminicli.com/docs/resources/troubleshooting) -
+- [**Troubleshooting Guide**](https://www.lscli.com/docs/resources/troubleshooting) -
   Common issues and solutions.
-- [**FAQ**](https://www.geminicli.com/docs/resources/faq) - Frequently asked
+- [**FAQ**](https://www.lscli.com/docs/resources/faq) - Frequently asked
   questions.
 - Use `/bug` command to report issues directly from the CLI.
 
 ### Using MCP Servers
 
-Configure MCP servers in `~/.gemini/settings.json` to extend Gemini CLI with
+Configure MCP servers in `~/.gemini/settings.json` to extend LS CLI with
 custom tools:
 
 ```text
@@ -349,12 +349,12 @@ custom tools:
 ```
 
 See the
-[MCP Server Integration guide](https://www.geminicli.com/docs/tools/mcp-server)
+[MCP Server Integration guide](https://www.lscli.com/docs/tools/mcp-server)
 for setup instructions.
 
 ## 🤝 Contributing
 
-We welcome contributions! Gemini CLI is fully open source (Apache 2.0), and we
+We welcome contributions! LS CLI is fully open source (Apache 2.0), and we
 encourage the community to:
 
 - Report bugs and suggest features.
@@ -365,43 +365,42 @@ encourage the community to:
 See our [Contributing Guide](./CONTRIBUTING.md) for development setup, coding
 standards, and how to submit pull requests.
 
-Check our [Official Roadmap](https://github.com/orgs/google-gemini/projects/11)
-for planned features and priorities.
+Check our [Official Roadmap](./ROADMAP.md) for planned features and priorities.
 
 ## 📖 Resources
 
-- **[Free Course](https://learn.deeplearning.ai/courses/gemini-cli-code-and-create-with-an-open-source-agent/information)** -
+- **[Free Course](https://learn.deeplearning.ai/courses/ls-cli-code-and-create-with-an-open-source-agent/information)** -
   Learn the basics.
 - **[Official Roadmap](./ROADMAP.md)** - See what's coming next.
-- **[Changelog](https://www.geminicli.com/docs/changelogs)** - See recent
+- **[Changelog](https://www.lscli.com/docs/changelogs)** - See recent
   notable updates.
-- **[NPM Package](https://www.npmjs.com/package/@google/gemini-cli)** - Package
+- **[NPM Package](https://www.npmjs.com/package/@ls/cli)** - Package
   registry.
-- **[GitHub Issues](https://github.com/google-gemini/gemini-cli/issues)** -
+- **[GitHub Issues](https://github.com/ls-cli/ls-cli/issues)** -
   Report bugs or request features.
-- **[Security Advisories](https://github.com/google-gemini/gemini-cli/security/advisories)** -
+- **[Security Advisories](https://github.com/ls-cli/ls-cli/security/advisories)** -
   Security updates.
 
 ### Uninstall
 
-See the [Uninstall Guide](https://www.geminicli.com/docs/resources/uninstall)
+See the [Uninstall Guide](https://www.lscli.com/docs/resources/uninstall)
 for removal instructions.
 
 ## 📄 Legal
 
 - **License**: [Apache License 2.0](LICENSE)
 - **Terms of Service**:
-  [Terms & Privacy](https://www.geminicli.com/docs/resources/tos-privacy)
+  [Terms & Privacy](https://www.lscli.com/docs/resources/tos-privacy)
 - **Security**: [Security Policy](SECURITY.md)
 
 <p align="left">
- <a href="https://www.star-history.com/google-gemini/gemini-cli">
-  <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/badge?repo=google-gemini/gemini-cli&theme=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/badge?repo=google-gemini/gemini-cli" />
-   <img alt="Star History Rank" src="https://api.star-history.com/badge?repo=google-gemini/gemini-cli" />
-  </picture>
- </a>
+  <a href="https://www.star-history.com/ls-cli/ls-cli">
+   <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/badge?repo=ls-cli/ls-cli&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/badge?repo=ls-cli/ls-cli" />
+    <img alt="Star History Rank" src="https://api.star-history.com/badge?repo=ls-cli/ls-cli" />
+   </picture>
+  </a>
 </p>
 
 ---

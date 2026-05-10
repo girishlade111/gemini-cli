@@ -51,7 +51,7 @@ if (process.env.CI) {
   );
   const parallelWorkspaces = workspaceInfo
     .map((w) => w.name)
-    .filter((name) => name !== '@google/gemini-cli-core');
+    .filter((name) => name !== '@ls/cli-core');
 
   execSync(
     `npx npm-run-all --parallel ${parallelWorkspaces.map((w) => `"build -w ${w}"`).join(' ')}`,

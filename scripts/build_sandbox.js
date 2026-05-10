@@ -90,34 +90,27 @@ if (!argv.s) {
   execSync('npm run build --workspaces', { stdio: 'inherit' });
 }
 
-console.log('packing @google/ls-cli ...');
+console.log('packing @ls/cli ...');
 const cliPackageDir = join('packages', 'cli');
 rmSync(join(cliPackageDir, 'dist', 'ls-cli-*.tgz'), { force: true });
-execSync(
-  `npm pack -w @google/ls-cli --pack-destination ./packages/cli/dist`,
-  {
-    stdio: 'ignore',
-  },
-);
+execSync(`npm pack -w @ls/cli --pack-destination ./packages/cli/dist`, {
+  stdio: 'ignore',
+});
 
-console.log('packing @google/ls-cli-core ...');
+console.log('packing @ls/core ...');
 const corePackageDir = join('packages', 'core');
 rmSync(join(corePackageDir, 'dist', 'ls-cli-core-*.tgz'), {
   force: true,
 });
-execSync(
-  `npm pack -w @google/ls-cli-core --pack-destination ./packages/core/dist`,
-  { stdio: 'ignore' },
-);
+execSync(`npm pack -w @ls/core --pack-destination ./packages/core/dist`, {
+  stdio: 'ignore',
+});
 
 const packageVersion = JSON.parse(
   readFileSync(join(process.cwd(), 'package.json'), 'utf-8'),
 ).version;
 
-chmodSync(
-  join(cliPackageDir, 'dist', `ls-cli-${packageVersion}.tgz`),
-  0o755,
-);
+chmodSync(join(cliPackageDir, 'dist', `ls-cli-${packageVersion}.tgz`), 0o755);
 chmodSync(
   join(corePackageDir, 'dist', `ls-cli-core-${packageVersion}.tgz`),
   0o755,

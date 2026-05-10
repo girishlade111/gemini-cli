@@ -1,11 +1,11 @@
 {
   "name": "@ls/cli-sdk",
   "version": "0.42.0-nightly.20260428.g59b2dea0e",
-  "description": "Gemini CLI SDK",
+  "description": "LS CLI SDK",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/google-gemini/gemini-cli.git"
+    "url": "git+https://github.com/ls-cli/ls-cli.git"
   },
   "type": "module",
   "main": "dist/index.js",

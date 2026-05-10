@@ -104,7 +104,7 @@
     "node-pty": "^1.0.0"
   },
   "devDependencies": {
-    "@google/ls-cli-test-utils": "file:../test-utils",
+    "@ls/test-utils": "file:../test-utils",
     "@types/fast-levenshtein": "^0.0.4",
     "@types/js-yaml": "^4.0.9",
     "@types/json-stable-stringify": "^1.1.0",

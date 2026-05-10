@@ -29,7 +29,7 @@ Learn all about LS CLI in our [documentation](https://lscli.com/docs/).
 ## 📦 Installation
 
 See
-[Gemini CLI installation, execution, and releases](https://www.geminicli.com/docs/get-started/installation)
+[LS CLI installation, execution, and releases](https://www.lscli.com/docs/get-started/installation)
 for recommended system specifications and a detailed installation guide.
 
 ### Quick Install
@@ -38,41 +38,41 @@ for recommended system specifications and a detailed installation guide.
 
 ```bash
 # Using npx (no installation required)
-npx @google/gemini-cli
+npx @ls/cli
 ```
 
 #### Install globally with npm
 
 ```bash
-npm install -g @google/gemini-cli
+npm install -g @ls/cli
 ```
 
 #### Install globally with Homebrew (macOS/Linux)
 
 ```bash
-brew install gemini-cli
+brew install ls-cli
 ```
 
 #### Install globally with MacPorts (macOS)
 
 ```bash
-sudo port install gemini-cli
+sudo port install ls-cli
 ```
 
 #### Install with Anaconda (for restricted environments)
 
 ```bash
 # Create and activate a new environment
-conda create -y -n gemini_env -c conda-forge nodejs
-conda activate gemini_env
+conda create -y -n ls_env -c conda-forge nodejs
+conda activate ls_env
 
-# Install Gemini CLI globally via npm (inside the environment)
-npm install -g @google/gemini-cli
+# Install LS CLI globally via npm (inside the environment)
+npm install -g @ls/cli
 ```
 
 ## Release Channels
 
-See [Releases](https://www.geminicli.com/docs/changelogs) for more details.
+See [Releases](https://www.lscli.com/docs/changelogs) for more details.
 
 ### Preview
 
@@ -81,7 +81,7 @@ releases will not have been fully vetted and may contain regressions or other
 outstanding issues. Please help us test and install with `preview` tag.
 
 ```bash
-npm install -g @google/gemini-cli@preview
+npm install -g @ls/cli@preview
 ```
 
 ### Stable
@@ -91,7 +91,7 @@ npm install -g @google/gemini-cli@preview
   and validations. Use `latest` tag.
 
 ```bash
-npm install -g @google/gemini-cli@latest
+npm install -g @ls/cli@latest
 ```
 
 ### Nightly
@@ -101,7 +101,7 @@ npm install -g @google/gemini-cli@latest
   there are pending validations and issues. Use `nightly` tag.
 
 ```bash
-npm install -g @google/gemini-cli@nightly
+npm install -g @ls/cli@nightly
 ```
 
 ## 📋 Key Features

@@ -314,7 +314,7 @@ export interface AgentShellProcess {
 - To validate the SDK, it would be useful to have a robust way to mock the
   underlying model API so that the tests could be closer to end-to-end but still
   deterministic.
-- Need to work in both Gemini-CLI-triggered approvals and optional
+- Need to work in both LS-CLI-triggered approvals and optional
   developer-initiated user prompts / HITL stuff.
 - Need to think about how subagents inherit message context \- e.g. do they have
   the same session id?

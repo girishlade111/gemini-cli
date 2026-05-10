@@ -115,11 +115,11 @@ const packageVersion = JSON.parse(
 ).version;
 
 chmodSync(
-  join(cliPackageDir, 'dist', `google-gemini-cli-${packageVersion}.tgz`),
+  join(cliPackageDir, 'dist', `ls-cli-${packageVersion}.tgz`),
   0o755,
 );
 chmodSync(
-  join(corePackageDir, 'dist', `google-gemini-cli-core-${packageVersion}.tgz`),
+  join(corePackageDir, 'dist', `ls-cli-core-${packageVersion}.tgz`),
   0o755,
 );
 

@@ -35,16 +35,16 @@ if (fs.existsSync(sourceBundleDir)) {
 const coreNpmrcPath = path.resolve(rootDir, 'packages/core/.npmrc');
 fs.writeFileSync(
   coreNpmrcPath,
-  '@google-gemini:registry=https://npm.pkg.github.com/',
+  '@ls-cli:registry=https://npm.pkg.github.com/',
 );
-console.log('Wrote .npmrc for @google-gemini scope to packages/core/');
+console.log('Wrote .npmrc for @ls-cli scope to packages/core/');
 
-// Update @google/gemini-cli
+// Update @ls/cli
 updatePackageJson('packages/cli/package.json', (pkg) => {
-  pkg.name = '@google-gemini/gemini-cli';
+  pkg.name = '@ls-cli/ls-cli';
   pkg.files = ['bundle/'];
   pkg.bin = {
-    gemini: 'bundle/gemini.js',
+    ls: 'bundle/ls.js',
   };
 
   // Remove fields that are not relevant to the bundled package.
@@ -55,14 +55,14 @@ updatePackageJson('packages/cli/package.json', (pkg) => {
   delete pkg.config; // Deletes the sandboxImageUri
 });
 
-// Update @google/gemini-cli-a2a-server
+// Update @ls/cli-a2a-server
 updatePackageJson('packages/a2a-server/package.json', (pkg) => {
-  pkg.name = '@google-gemini/gemini-cli-a2a-server';
+  pkg.name = '@ls-cli/ls-cli-a2a-server';
 });
 
-// Update @google/gemini-cli-core
+// Update @ls/cli-core
 updatePackageJson('packages/core/package.json', (pkg) => {
-  pkg.name = '@google-gemini/gemini-cli-core';
+  pkg.name = '@ls-cli/ls-cli-core';
 });
 
 console.log('Successfully prepared packages for GitHub release.');

@@ -38,8 +38,8 @@ if (process.env.CI) {
   execSync('npm run build --workspaces', { stdio: 'inherit', cwd: root });
 } else {
   // Build core first because everyone depends on it
-  console.log('Building @google/gemini-cli-core...');
-  execSync('npm run build -w @google/gemini-cli-core', {
+  console.log('Building @ls/cli-core...');
+  execSync('npm run build -w @ls/cli-core', {
     stdio: 'inherit',
     cwd: root,
   });

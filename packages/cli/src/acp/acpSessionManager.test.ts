@@ -21,7 +21,7 @@ import {
   type Config,
   type MessageBus,
   type Storage,
-} from '@google/gemini-cli-core';
+} from '@ls/cli-core';
 import type { LoadedSettings } from '../config/settings.js';
 import { loadCliConfig, type CliArgs } from '../config/config.js';
 import { loadSettings } from '../config/settings.js';

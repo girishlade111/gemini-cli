@@ -38,7 +38,7 @@ import {
   processRestorableToolCalls,
   MessageBusType,
   type ToolCallsUpdateMessage,
-} from '@google/gemini-cli-core';
+} from '@ls/cli-core';
 import {
   type ExecutionEventBus,
   type RequestContext,

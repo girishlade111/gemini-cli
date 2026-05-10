@@ -13,7 +13,7 @@ import {
 import {
   writeToStderr,
   type AdminControlsSettings,
-} from '@google/gemini-cli-core';
+} from '@ls/cli-core';
 
 export async function relaunchOnExitCode(runner: () => Promise<number>) {
   while (true) {

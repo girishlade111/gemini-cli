@@ -14,7 +14,7 @@ import {
   loadConversationRecord,
   type Config,
   type ResumedSessionData,
-} from '@google/gemini-cli-core';
+} from '@ls/cli-core';
 import {
   convertSessionToHistoryFormats,
   type SessionInfo,

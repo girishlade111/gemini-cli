@@ -23,7 +23,7 @@ import {
   getDisplayString,
   AuthType,
   ToolConfirmationOutcome,
-} from '@google/gemini-cli-core';
+} from '@ls/cli-core';
 import type * as acp from '@agentclientprotocol/sdk';
 import { z } from 'zod';
 import type { LoadedSettings } from '../config/settings.js';

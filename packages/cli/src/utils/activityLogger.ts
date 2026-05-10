@@ -16,7 +16,7 @@ import {
   debugLogger,
   type ConsoleLogPayload,
   type Config,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 import WebSocket from 'ws';
 
 const ACTIVITY_ID_HEADER = 'x-activity-request-id';

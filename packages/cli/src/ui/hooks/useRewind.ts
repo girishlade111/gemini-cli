@@ -8,7 +8,7 @@ import { useState, useCallback } from 'react';
 import type {
   ConversationRecord,
   MessageRecord,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 import {
   calculateTurnStats,
   calculateRewindImpact,

@@ -5,7 +5,7 @@
  */
 
 import type { CommandModule } from 'yargs';
-import { debugLogger } from '@ls/cli-core';
+import { debugLogger } from '@google/ls-cli-core';
 import {
   McpServerEnablementManager,
   canLoadServer,

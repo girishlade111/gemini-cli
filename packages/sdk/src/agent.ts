@@ -11,7 +11,7 @@ import {
   type ResumedSessionData,
   type ConversationRecord,
   loadConversationRecord,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 
 import { GeminiCliSession } from './session.js';
 import type { GeminiCliAgentOptions } from './types.js';

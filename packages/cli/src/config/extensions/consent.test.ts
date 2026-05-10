@@ -18,7 +18,7 @@ import {
 } from './consent.js';
 import type { ConfirmationRequest } from '../../ui/types.js';
 import type { ExtensionConfig } from '../extension.js';
-import { debugLogger, type SkillDefinition } from '@ls/cli-core';
+import { debugLogger, type SkillDefinition } from '@google/ls-cli-core';
 
 const mockReadline = vi.hoisted(() => ({
   createInterface: vi.fn().mockReturnValue({
@@ -47,9 +47,9 @@ vi.mock('node:fs/promises', async (importOriginal) => {
   };
 });
 
-vi.mock('@ls/cli-core', async (importOriginal) => {
+vi.mock('@google/ls-cli-core', async (importOriginal) => {
   const actual =
-    await importOriginal<typeof import('@ls/cli-core')>();
+    await importOriginal<typeof import('@google/ls-cli-core')>();
   return {
     ...actual,
     debugLogger: {

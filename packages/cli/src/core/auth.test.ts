@@ -11,11 +11,11 @@ import {
   ValidationRequiredError,
   ProjectIdRequiredError,
   AuthType,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 
-vi.mock('@ls/cli-core', async (importOriginal) => {
+vi.mock('@google/ls-cli-core', async (importOriginal) => {
   const actual =
-    await importOriginal<typeof import('@ls/cli-core')>();
+    await importOriginal<typeof import('@google/ls-cli-core')>();
   return {
     ...actual,
   };

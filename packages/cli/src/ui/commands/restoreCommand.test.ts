@@ -15,7 +15,7 @@ import {
   GEMINI_DIR,
   type Config,
   type GitService,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 
 describe('restoreCommand', () => {
   let mockContext: CommandContext;

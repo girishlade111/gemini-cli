@@ -5,7 +5,7 @@
  */
 
 import type { ExecutionEventBus, AgentExecutor } from '@a2a-js/sdk/server';
-import type { Config, GitService } from '@ls/cli-core';
+import type { Config, GitService } from '@google/ls-cli-core';
 
 export interface CommandContext {
   config: Config;

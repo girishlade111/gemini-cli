@@ -21,12 +21,12 @@ import {
   FatalAuthenticationError,
   PolicyDecision,
   PRIORITY_YOLO_ALLOW_ALL,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 
 // Mock dependencies
-vi.mock('@ls/cli-core', async (importOriginal) => {
+vi.mock('@google/ls-cli-core', async (importOriginal) => {
   const actual =
-    await importOriginal<typeof import('@ls/cli-core')>();
+    await importOriginal<typeof import('@google/ls-cli-core')>();
   return {
     ...actual,
     PRIORITY_YOLO_ALLOW_ALL: 998,

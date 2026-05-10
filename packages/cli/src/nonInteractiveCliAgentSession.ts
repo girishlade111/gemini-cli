@@ -10,7 +10,7 @@ import type {
   UserFeedbackPayload,
   AgentEvent,
   ContentPart,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 import { isSlashCommand } from './ui/utils/commandUtils.js';
 import type { LoadedSettings } from './config/settings.js';
 import {
@@ -39,7 +39,7 @@ import {
   geminiPartsToContentParts,
   displayContentToString,
   debugLogger,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 
 import type { Part } from '@google/genai';
 import readline from 'node:readline';

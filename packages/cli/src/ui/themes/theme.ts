@@ -8,7 +8,7 @@ import type { CSSProperties } from 'react';
 
 import type { SemanticColors } from './semantic-tokens.js';
 
-import type { CustomTheme } from '@ls/cli-core';
+import type { CustomTheme } from '@google/ls-cli-core';
 import {
   DEFAULT_INPUT_BACKGROUND_OPACITY,
   DEFAULT_SELECTION_OPACITY,

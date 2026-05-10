@@ -7,7 +7,7 @@
 import { type DOMElement, measureElement } from 'ink';
 import { useEffect } from 'react';
 import { useConfig } from '../contexts/ConfigContext.js';
-import { recordFlickerFrame } from '@ls/cli-core';
+import { recordFlickerFrame } from '@google/ls-cli-core';
 import { appEvents, AppEvent } from '../../utils/events.js';
 import { useUIState } from '../contexts/UIStateContext.js';
 

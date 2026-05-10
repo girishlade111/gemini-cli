@@ -12,8 +12,8 @@ import {
   isTelemetrySdkInitialized,
   ExitCodes,
   resetBrowserSession,
-} from '@ls/cli-core';
-import type { Config } from '@ls/cli-core';
+} from '@google/ls-cli-core';
+import type { Config } from '@google/ls-cli-core';
 
 const cleanupFunctions: Array<(() => void) | (() => Promise<void>)> = [];
 const syncCleanupFunctions: Array<() => void> = [];

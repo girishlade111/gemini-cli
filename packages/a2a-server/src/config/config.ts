@@ -30,7 +30,7 @@ import {
   type TelemetryTarget,
   type ConfigParameters,
   type ExtensionLoader,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 
 import { logger } from '../utils/logger.js';
 import type { Settings } from './settings.js';

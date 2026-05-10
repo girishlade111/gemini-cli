@@ -10,7 +10,7 @@ import {
   coreEvents,
   CoreEvent,
   type ConsoleLogPayload,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 
 export interface UseErrorCountReturn {
   errorCount: number;

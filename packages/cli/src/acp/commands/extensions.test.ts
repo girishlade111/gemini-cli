@@ -14,9 +14,9 @@ import { ExtensionManager } from '../../config/extension-manager.js';
 
 const mockGetErrorMessage = vi.hoisted(() => vi.fn());
 
-vi.mock('@ls/cli-core', async (importOriginal) => {
+vi.mock('@google/ls-cli-core', async (importOriginal) => {
   const actual =
-    await importOriginal<typeof import('@ls/cli-core')>();
+    await importOriginal<typeof import('@google/ls-cli-core')>();
   return {
     ...actual,
     getErrorMessage: mockGetErrorMessage,

@@ -15,10 +15,10 @@ import {
 } from 'vitest';
 import { ideCommand } from './ideCommand.js';
 import { type CommandContext } from './types.js';
-import { IDE_DEFINITIONS } from '@ls/cli-core';
-import * as core from '@ls/cli-core';
+import { IDE_DEFINITIONS } from '@google/ls-cli-core';
+import * as core from '@google/ls-cli-core';
 
-vi.mock('@ls/cli-core', async (importOriginal) => {
+vi.mock('@google/ls-cli-core', async (importOriginal) => {
   const original = await importOriginal<typeof core>();
   return {
     ...original,

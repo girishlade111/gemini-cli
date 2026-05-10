@@ -21,8 +21,8 @@ import {
   debugLogger,
   ExitCodes,
   coreEvents,
-} from '@ls/cli-core';
-import type { Config } from '@ls/cli-core';
+} from '@google/ls-cli-core';
+import type { Config } from '@google/ls-cli-core';
 import * as auth from './config/auth.js';
 import { type LoadedSettings } from './config/settings.js';
 

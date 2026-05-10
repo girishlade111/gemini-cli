@@ -21,14 +21,14 @@ import {
   Config,
   ApprovalMode,
   type Config as ActualConfigType,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 import { useKeypress, type Key } from './useKeypress.js';
 import { MessageType } from '../types.js';
 
 vi.mock('./useKeypress.js');
 
-vi.mock('@ls/cli-core', async () => {
-  const actualServerModule = await vi.importActual('@ls/cli-core');
+vi.mock('@google/ls-cli-core', async () => {
+  const actualServerModule = await vi.importActual('@google/ls-cli-core');
   return {
     ...actualServerModule,
     Config: vi.fn(),

@@ -9,7 +9,7 @@ import {
   ShellExecutionService,
   ShellTool,
   type Config as CoreConfig,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 import type {
   AgentShell,
   AgentShellResult,

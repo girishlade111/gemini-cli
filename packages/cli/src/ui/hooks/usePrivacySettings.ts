@@ -11,7 +11,7 @@ import {
   UserTierId,
   getCodeAssistServer,
   debugLogger,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 
 export interface PrivacyState {
   isLoading: boolean;

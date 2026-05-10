@@ -9,7 +9,7 @@ import {
   hasValidEditorCommand,
   type EditorType,
   EDITOR_DISPLAY_NAMES,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 
 export interface EditorDisplay {
   name: string;

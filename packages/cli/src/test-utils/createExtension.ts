@@ -11,7 +11,7 @@ import {
   type ExtensionInstallMetadata,
   type ExtensionSetting,
   type CustomTheme,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 import {
   EXTENSIONS_CONFIG_FILENAME,
   INSTALL_METADATA_FILENAME,

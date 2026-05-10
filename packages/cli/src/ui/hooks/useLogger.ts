@@ -5,7 +5,7 @@
  */
 
 import { useState, useEffect } from 'react';
-import { Logger, type Config } from '@ls/cli-core';
+import { Logger, type Config } from '@google/ls-cli-core';
 
 /**
  * Hook to manage the logger instance.

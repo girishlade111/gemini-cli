@@ -12,7 +12,7 @@ import {
   listMemoryFiles,
   refreshMemory,
   showMemory,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 import type {
   Command,
   CommandContext,

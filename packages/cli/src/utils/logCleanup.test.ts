@@ -14,7 +14,7 @@ import {
 import * as path from 'node:path';
 import { cleanupBackgroundLogs } from './logCleanup.js';
 
-vi.mock('@ls/cli-core', () => ({
+vi.mock('@google/ls-cli-core', () => ({
   ShellExecutionService: {
     getLogDir: vi.fn().mockReturnValue('/tmp/gemini/tmp/background-processes'),
   },

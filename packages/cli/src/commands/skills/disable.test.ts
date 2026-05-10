@@ -20,9 +20,9 @@ const { emitConsoleLog, debugLogger } = await vi.hoisted(async () => {
   return createMockDebugLogger({ stripAnsi: true });
 });
 
-vi.mock('@ls/cli-core', async (importOriginal) => {
+vi.mock('@google/ls-cli-core', async (importOriginal) => {
   const actual =
-    await importOriginal<typeof import('@ls/cli-core')>();
+    await importOriginal<typeof import('@google/ls-cli-core')>();
   return {
     ...actual,
     debugLogger,

@@ -13,7 +13,7 @@ vi.mock('node:os', () => ({
   homedir: vi.fn(),
 }));
 
-vi.mock('@ls/cli-core', () => ({
+vi.mock('@google/ls-cli-core', () => ({
   homedir: () => os.homedir(),
 }));
 

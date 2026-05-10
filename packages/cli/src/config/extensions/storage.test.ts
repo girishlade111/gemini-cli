@@ -13,7 +13,7 @@ import {
   EXTENSION_SETTINGS_FILENAME,
   EXTENSIONS_CONFIG_FILENAME,
 } from './variables.js';
-import { Storage } from '@ls/cli-core';
+import { Storage } from '@google/ls-cli-core';
 
 vi.mock('node:os');
 vi.mock('node:fs', async (importOriginal) => {
@@ -26,7 +26,7 @@ vi.mock('node:fs', async (importOriginal) => {
     },
   };
 });
-vi.mock('@ls/cli-core');
+vi.mock('@google/ls-cli-core');
 
 describe('ExtensionStorage', () => {
   const mockHomeDir = '/mock/home';

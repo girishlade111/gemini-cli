@@ -4,14 +4,14 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { getPackageJson } from '@ls/cli-core';
+import { getPackageJson } from '@google/ls-cli-core';
 import commandExists from 'command-exists';
 import * as os from 'node:os';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { loadSandboxConfig } from './sandboxConfig.js';
 
 // Mock dependencies
-vi.mock('@ls/cli-core', async (importOriginal) => {
+vi.mock('@google/ls-cli-core', async (importOriginal) => {
   const actual = await importOriginal();
   return {
     ...(actual as object),

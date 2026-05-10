@@ -19,7 +19,7 @@ import {
   isOverageEligibleModel,
   getDisplayString,
   type GeminiUserTier,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { type UseHistoryManagerReturn } from './useHistoryManager.js';
 import { MessageType } from '../types.js';

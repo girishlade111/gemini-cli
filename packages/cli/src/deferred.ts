@@ -8,7 +8,7 @@ import {
   coreEvents,
   ExitCodes,
   getAdminErrorMessage,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 import { runExitCleanup } from './utils/cleanup.js';
 import type { MergedSettings } from './config/settings.js';
 import process from 'node:process';

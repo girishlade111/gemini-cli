@@ -6,9 +6,9 @@
 
 import { vi, describe, expect, it, beforeEach, afterEach } from 'vitest';
 import { readStdin } from './readStdin.js';
-import { debugLogger } from '@ls/cli-core';
+import { debugLogger } from '@google/ls-cli-core';
 
-vi.mock('@ls/cli-core', () => ({
+vi.mock('@google/ls-cli-core', () => ({
   debugLogger: {
     warn: vi.fn(),
   },

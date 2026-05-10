@@ -7,7 +7,7 @@
 import type {
   ConversationRecord,
   MessageRecord,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 import fs from 'node:fs/promises';
 import * as Diff from 'diff';
 import {
@@ -15,7 +15,7 @@ import {
   debugLogger,
   getFileDiffFromResultDisplay,
   computeModelAddedAndRemovedLines,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 
 export interface FileChangeDetail {
   fileName: string;

@@ -17,11 +17,11 @@ import {
 import * as fs from 'node:fs';
 import * as path from 'node:path';
 import { tmpdir } from 'node:os';
-import type { ConfigParameters } from '@ls/cli-core';
+import type { ConfigParameters } from '@google/ls-cli-core';
 import {
   Config,
   DEFAULT_FILE_FILTERING_OPTIONS,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 import { createTestMergedSettings } from './settings.js';
 import { http, HttpResponse } from 'msw';
 
@@ -45,8 +45,8 @@ afterAll(() => {
 const CLEARCUT_URL = 'https://play.googleapis.com/log';
 
 // Mock file discovery service and tool registry
-vi.mock('@ls/cli-core', async () => {
-  const actual = await vi.importActual('@ls/cli-core');
+vi.mock('@google/ls-cli-core', async () => {
+  const actual = await vi.importActual('@google/ls-cli-core');
   return {
     ...actual,
     FileDiscoveryService: vi.fn().mockImplementation(() => ({

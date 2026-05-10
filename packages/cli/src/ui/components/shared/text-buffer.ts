@@ -15,7 +15,7 @@ import {
   debugLogger,
   unescapePath,
   type EditorType,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 import {
   toCodePoints,
   cpLen,

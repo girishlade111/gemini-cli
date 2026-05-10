@@ -20,7 +20,7 @@ import {
   type Config,
   type MessageBus,
   type Storage,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 import type { LoadedSettings } from '../config/settings.js';
 import { loadCliConfig, type CliArgs } from '../config/config.js';
 import { loadSettings, SettingScope } from '../config/settings.js';

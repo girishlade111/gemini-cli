@@ -39,9 +39,9 @@ function getArgs() {
     })
     .option('cli-package-name', {
       description:
-        'fully qualified package name with scope (e.g @ls/cli)',
+        'fully qualified package name with scope (e.g @google/ls-cli)',
       string: true,
-      default: '@ls/cli',
+      default: '@google/ls-cli',
     })
     .option('preview_version_override', {
       description: 'Override the calculated preview version.',

@@ -7,7 +7,7 @@
 import fs from 'node:fs/promises';
 import os from 'node:os';
 import { join as pathJoin } from 'node:path';
-import { getErrorMessage } from '@ls/cli-core';
+import { getErrorMessage } from '@google/ls-cli-core';
 
 const warningsFilePath = pathJoin(os.tmpdir(), 'ls-cli-warnings.txt');
 

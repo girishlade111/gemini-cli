@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import type { AnsiOutput, CompletionBehavior } from '@ls/cli-core';
+import type { AnsiOutput, CompletionBehavior } from '@google/ls-cli-core';
 import {
   MAX_SHELL_OUTPUT_SIZE,
   SHELL_OUTPUT_TRUNCATION_BUFFER,

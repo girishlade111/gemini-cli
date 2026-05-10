@@ -19,7 +19,7 @@ const debugLogger = vi.hoisted(() => ({
   debug: vi.fn(),
 }));
 
-vi.mock('@ls/cli-core', () => ({
+vi.mock('@google/ls-cli-core', () => ({
   writeToStdout,
   debugLogger,
 }));

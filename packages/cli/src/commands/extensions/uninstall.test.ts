@@ -18,7 +18,7 @@ import { type Argv } from 'yargs';
 import { handleUninstall, uninstallCommand } from './uninstall.js';
 import { ExtensionManager } from '../../config/extension-manager.js';
 import { loadSettings, type LoadedSettings } from '../../config/settings.js';
-import { getErrorMessage } from '@ls/cli-core';
+import { getErrorMessage } from '@google/ls-cli-core';
 
 // NOTE: This file uses vi.hoisted() mocks to enable testing of sequential
 // mock behaviors (mockResolvedValueOnce/mockRejectedValueOnce chaining).
@@ -57,9 +57,9 @@ const debugLogger = vi.hoisted(() => ({
   }),
 }));
 
-vi.mock('@ls/cli-core', async (importOriginal) => {
+vi.mock('@google/ls-cli-core', async (importOriginal) => {
   const actual =
-    await importOriginal<typeof import('@ls/cli-core')>();
+    await importOriginal<typeof import('@google/ls-cli-core')>();
   return {
     ...actual,
     coreEvents: {

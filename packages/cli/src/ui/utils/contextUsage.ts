@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { tokenLimit } from '@ls/cli-core';
+import { tokenLimit } from '@google/ls-cli-core';
 
 export function getContextUsagePercentage(
   promptTokenCount: number,

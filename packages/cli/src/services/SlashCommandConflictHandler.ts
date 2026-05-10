@@ -9,7 +9,7 @@ import {
   CoreEvent,
   type SlashCommandConflictsPayload,
   type SlashCommandConflict,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 import { CommandKind } from '../ui/commands/types.js';
 
 /**

@@ -18,7 +18,7 @@ import {
   type PolicyUpdateConfirmationRequest,
   writeToStderr,
   debugLogger,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 import { type Settings } from './settings.js';
 
 /**

@@ -13,7 +13,7 @@ import {
   exitAlternateScreen,
   enableLineWrapping,
   disableLineWrapping,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 import process from 'node:process';
 import {
   cleanupTerminalOnExit,

@@ -10,7 +10,7 @@ import {
   writeToStderr,
   writeToStdout,
   type Config,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 import {
   formatRelativeTime,
   SessionSelector,

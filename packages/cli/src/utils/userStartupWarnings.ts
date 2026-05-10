@@ -14,7 +14,7 @@ import {
   type StartupWarning,
   isHeadlessMode,
   FatalUntrustedWorkspaceError,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 import type { Settings } from '../config/settingsSchema.js';
 import {
   isFolderTrustEnabled,

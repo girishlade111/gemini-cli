@@ -12,7 +12,7 @@ import {
   HookEventName,
   ConfigSource,
   type HookRegistryEntry,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 import type { CommandContext } from './types.js';
 import { SettingScope } from '../../config/settings.js';
 

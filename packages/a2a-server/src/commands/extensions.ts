@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { listExtensions } from '@ls/cli-core';
+import { listExtensions } from '@google/ls-cli-core';
 import type {
   Command,
   CommandContext,

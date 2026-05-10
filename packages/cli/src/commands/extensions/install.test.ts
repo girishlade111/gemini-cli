@@ -15,7 +15,7 @@ import {
 } from 'vitest';
 import { handleInstall, installCommand } from './install.js';
 import yargs from 'yargs';
-import * as core from '@ls/cli-core';
+import * as core from '@google/ls-cli-core';
 import type { Stats } from 'node:fs';
 import * as path from 'node:path';
 import { promptForSetting } from '../../config/extensions/extensionSettings.js';
@@ -67,9 +67,9 @@ vi.mock('../../config/trustedFolders.js', () => ({
   },
 }));
 
-vi.mock('@ls/cli-core', async (importOriginal) => {
+vi.mock('@google/ls-cli-core', async (importOriginal) => {
   const actual =
-    await importOriginal<typeof import('@ls/cli-core')>();
+    await importOriginal<typeof import('@google/ls-cli-core')>();
   return {
     ...actual,
     FolderTrustDiscoveryService: {

@@ -7,7 +7,7 @@
 import * as fs from 'node:fs/promises';
 import * as path from 'node:path';
 import type { PartListUnion, PartUnion } from '@google/genai';
-import type { AnyToolInvocation, Config } from '@ls/cli-core';
+import type { AnyToolInvocation, Config } from '@google/ls-cli-core';
 import {
   debugLogger,
   getErrorMessage,
@@ -19,7 +19,7 @@ import {
   REFERENCE_CONTENT_START,
   REFERENCE_CONTENT_END,
   CoreToolCallStatus,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 import { Buffer } from 'node:buffer';
 import type {
   HistoryItemToolGroup,

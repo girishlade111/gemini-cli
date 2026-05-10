@@ -8,7 +8,7 @@ import { describe, it, expect, vi, beforeEach } from 'vitest';
 import * as path from 'node:path';
 import { loadCliConfig, type CliArgs } from './config.js';
 import { createTestMergedSettings } from './settings.js';
-import * as ServerConfig from '@ls/cli-core';
+import * as ServerConfig from '@google/ls-cli-core';
 import { isWorkspaceTrusted } from './trustedFolders.js';
 import * as Policy from './policy.js';
 
@@ -20,9 +20,9 @@ vi.mock('./trustedFolders.js', () => ({
 const mockCheckIntegrity = vi.fn();
 const mockAcceptIntegrity = vi.fn();
 
-vi.mock('@ls/cli-core', async () => {
+vi.mock('@google/ls-cli-core', async () => {
   const actual = await vi.importActual<typeof ServerConfig>(
-    '@ls/cli-core',
+    '@google/ls-cli-core',
   );
   return {
     ...actual,

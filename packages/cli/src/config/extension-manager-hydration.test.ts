@@ -13,7 +13,7 @@ import {
   debugLogger,
   coreEvents,
   type CommandHookConfig,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 import { createTestMergedSettings } from './settings.js';
 import { createExtension } from '../test-utils/createExtension.js';
 import { EXTENSIONS_DIRECTORY_NAME } from './extensions/variables.js';
@@ -28,10 +28,10 @@ vi.mock('node:os', async (importOriginal) => {
   };
 });
 
-// Mock @ls/cli-core
-vi.mock('@ls/cli-core', async (importOriginal) => {
+// Mock @google/ls-cli-core
+vi.mock('@google/ls-cli-core', async (importOriginal) => {
   const actual =
-    await importOriginal<typeof import('@ls/cli-core')>();
+    await importOriginal<typeof import('@google/ls-cli-core')>();
   return {
     ...actual,
     homedir: mockHomedir,

@@ -39,10 +39,10 @@ const mockConfig = {
 // Mock scheduleAgentTools at module level so tests can override it
 const mockScheduleAgentTools = vi.fn().mockResolvedValue([]);
 
-// Mock @ls/cli-core to avoid heavy filesystem/auth/telemetry setup
-vi.mock('@ls/cli-core', async (importOriginal) => {
+// Mock @google/ls-cli-core to avoid heavy filesystem/auth/telemetry setup
+vi.mock('@google/ls-cli-core', async (importOriginal) => {
   const actual =
-    await importOriginal<typeof import('@ls/cli-core')>();
+    await importOriginal<typeof import('@google/ls-cli-core')>();
   return {
     ...actual,
     Config: vi.fn().mockImplementation(() => mockConfig),
@@ -225,7 +225,7 @@ describe.skip('GeminiCliSession sendStream()', () => {
   });
 
   it('executes tool call loop and sends function response back to model', async () => {
-    const { GeminiEventType } = await import('@ls/cli-core');
+    const { GeminiEventType } = await import('@google/ls-cli-core');
 
     // First call: yield a ToolCallRequest, then end
     // Second call: empty stream (model is done after tool result)

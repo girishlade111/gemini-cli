@@ -90,23 +90,23 @@ if (!argv.s) {
   execSync('npm run build --workspaces', { stdio: 'inherit' });
 }
 
-console.log('packing @ls/cli ...');
+console.log('packing @google/ls-cli ...');
 const cliPackageDir = join('packages', 'cli');
 rmSync(join(cliPackageDir, 'dist', 'ls-cli-*.tgz'), { force: true });
 execSync(
-  `npm pack -w @ls/cli --pack-destination ./packages/cli/dist`,
+  `npm pack -w @google/ls-cli --pack-destination ./packages/cli/dist`,
   {
     stdio: 'ignore',
   },
 );
 
-console.log('packing @ls/cli-core ...');
+console.log('packing @google/ls-cli-core ...');
 const corePackageDir = join('packages', 'core');
 rmSync(join(corePackageDir, 'dist', 'ls-cli-core-*.tgz'), {
   force: true,
 });
 execSync(
-  `npm pack -w @ls/cli-core --pack-destination ./packages/core/dist`,
+  `npm pack -w @google/ls-cli-core --pack-destination ./packages/core/dist`,
   { stdio: 'ignore' },
 );
 

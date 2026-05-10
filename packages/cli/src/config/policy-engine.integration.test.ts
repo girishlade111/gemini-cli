@@ -9,14 +9,14 @@ import {
   ApprovalMode,
   PolicyDecision,
   PolicyEngine,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 import { createPolicyEngineConfig } from './policy.js';
 import type { Settings } from './settings.js';
 
 // Mock Storage to ensure tests are hermetic and don't read from user's home directory
-vi.mock('@ls/cli-core', async (importOriginal) => {
+vi.mock('@google/ls-cli-core', async (importOriginal) => {
   const actual =
-    await importOriginal<typeof import('@ls/cli-core')>();
+    await importOriginal<typeof import('@google/ls-cli-core')>();
   const Storage = actual.Storage;
   // Monkey-patch static methods
   Storage.getUserPoliciesDir = () => '/non-existent/user/policies';

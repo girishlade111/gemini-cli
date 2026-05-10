@@ -9,7 +9,7 @@ import {
   fetchWithTimeout,
   resolveToRealPath,
   isPrivateIp,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 import { AsyncFzf } from 'fzf';
 
 export interface RegistryExtension {

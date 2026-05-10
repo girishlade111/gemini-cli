@@ -14,7 +14,7 @@ import { setTimeout as sleep } from 'node:timers/promises';
 import {
   PREVIEW_GEMINI_FLASH_MODEL,
   GEMINI_DIR,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 export { GEMINI_DIR };
 import * as pty from '@lydell/node-pty';
 import stripAnsi from 'strip-ansi';

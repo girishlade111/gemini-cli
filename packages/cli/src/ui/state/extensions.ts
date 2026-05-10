@@ -5,7 +5,7 @@
  */
 
 import type { ExtensionUpdateInfo } from '../../config/extension.js';
-import { checkExhaustive } from '@ls/cli-core';
+import { checkExhaustive } from '@google/ls-cli-core';
 
 export enum ExtensionUpdateState {
   CHECKING_FOR_UPDATES = 'checking for updates',

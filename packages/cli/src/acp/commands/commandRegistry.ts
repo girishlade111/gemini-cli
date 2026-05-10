@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { debugLogger } from '@ls/cli-core';
+import { debugLogger } from '@google/ls-cli-core';
 import type { Command } from './types.js';
 
 export class CommandRegistry {

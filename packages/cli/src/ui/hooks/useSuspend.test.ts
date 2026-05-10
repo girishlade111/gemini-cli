@@ -24,7 +24,7 @@ import {
   exitAlternateScreen,
   enableLineWrapping,
   disableLineWrapping,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 import {
   cleanupTerminalOnExit,
   terminalCapabilityManager,
@@ -32,8 +32,8 @@ import {
 import { formatCommand } from '../key/keybindingUtils.js';
 import { Command } from '../key/keyBindings.js';
 
-vi.mock('@ls/cli-core', async () => {
-  const actual = await vi.importActual('@ls/cli-core');
+vi.mock('@google/ls-cli-core', async () => {
+  const actual = await vi.importActual('@google/ls-cli-core');
   return {
     ...actual,
     writeToStdout: vi.fn(),

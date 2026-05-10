@@ -10,7 +10,7 @@ import type {
   ShellExecutionResult,
   ShellOutputEvent,
   ShellExecutionConfig,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 
 export interface MockShellCommand {
   command: string | RegExp;

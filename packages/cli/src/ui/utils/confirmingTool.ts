@@ -7,7 +7,7 @@
 import {
   CoreToolCallStatus,
   belongsInConfirmationQueue,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 import {
   type HistoryItemWithoutId,
   type IndividualToolCallDisplay,

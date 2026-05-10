@@ -18,7 +18,7 @@ import {
   setDeferredCommand,
   type DeferredCommand,
 } from './deferred.js';
-import { ExitCodes } from '@ls/cli-core';
+import { ExitCodes } from '@google/ls-cli-core';
 import type { ArgumentsCamelCase, CommandModule } from 'yargs';
 import { createMockSettings } from './test-utils/settings.js';
 
@@ -29,8 +29,8 @@ const { mockRunExitCleanup, mockCoreEvents } = vi.hoisted(() => ({
   },
 }));
 
-vi.mock('@ls/cli-core', async () => {
-  const actual = await vi.importActual('@ls/cli-core');
+vi.mock('@google/ls-cli-core', async () => {
+  const actual = await vi.importActual('@google/ls-cli-core');
   return {
     ...actual,
     coreEvents: mockCoreEvents,

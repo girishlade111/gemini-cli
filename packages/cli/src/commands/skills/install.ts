@@ -9,7 +9,7 @@ import {
   debugLogger,
   type SkillDefinition,
   getErrorMessage,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 import { exitCli } from '../utils.js';
 import { installSkill } from '../../utils/skillUtils.js';
 import chalk from 'chalk';

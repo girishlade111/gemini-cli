@@ -15,8 +15,8 @@ import {
   FatalSandboxError,
   homedir,
   type SandboxConfig,
-} from '@ls/cli-core';
-import { createMockSandboxConfig } from '@ls/cli-test-utils';
+} from '@google/ls-cli-core';
+import { createMockSandboxConfig } from '@google/ls-cli-test-utils';
 import { EventEmitter } from 'node:events';
 
 const { mockedHomedir, mockedGetContainerPath, mockedExecCommands } =
@@ -85,9 +85,9 @@ vi.mock('node:util', async (importOriginal) => {
   };
 });
 
-vi.mock('@ls/cli-core', async (importOriginal) => {
+vi.mock('@google/ls-cli-core', async (importOriginal) => {
   const actual =
-    await importOriginal<typeof import('@ls/cli-core')>();
+    await importOriginal<typeof import('@google/ls-cli-core')>();
   return {
     ...actual,
     debugLogger: {

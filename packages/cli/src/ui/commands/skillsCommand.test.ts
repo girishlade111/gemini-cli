@@ -9,7 +9,7 @@ import { skillsCommand } from './skillsCommand.js';
 import { MessageType, type HistoryItemSkillsList } from '../types.js';
 import { createMockCommandContext } from '../../test-utils/mockCommandContext.js';
 import type { CommandContext } from './types.js';
-import type { Config, SkillDefinition } from '@ls/cli-core';
+import type { Config, SkillDefinition } from '@google/ls-cli-core';
 import {
   SettingScope,
   type LoadedSettings,

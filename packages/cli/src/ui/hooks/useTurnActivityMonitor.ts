@@ -10,7 +10,7 @@ import {
   hasRedirection,
   type CoreToolCallStatus,
   type ToolCallRequestInfo,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 
 export interface MinimalTrackedToolCall {
   status: CoreToolCallStatus;

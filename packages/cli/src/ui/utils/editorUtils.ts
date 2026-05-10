@@ -13,7 +13,7 @@ import {
   getEditorCommand,
   isGuiEditor,
   isTerminalEditor,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 
 /**
  * Opens a file in an external editor and waits for it to close.

@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { isWithinRoot, type FileSystemService } from '@ls/cli-core';
+import { isWithinRoot, type FileSystemService } from '@google/ls-cli-core';
 import type * as acp from '@agentclientprotocol/sdk';
 import os from 'node:os';
 import path from 'node:path';

@@ -24,8 +24,8 @@ import {
   NoopSandboxManager,
   type ToolRegistry,
   type SandboxManager,
-} from '@ls/cli-core';
-import { createMockMessageBus } from '@ls/cli-core/src/test-utils/mock-message-bus.js';
+} from '@google/ls-cli-core';
+import { createMockMessageBus } from '@google/ls-cli-core/src/test-utils/mock-message-bus.js';
 import { expect, vi } from 'vitest';
 
 export function createMockConfig(

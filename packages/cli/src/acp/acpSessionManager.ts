@@ -12,7 +12,7 @@ import {
   startupProfiler,
   convertSessionToClientHistory,
   createPolicyUpdater,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 import * as acp from '@agentclientprotocol/sdk';
 import { randomUUID } from 'node:crypto';
 import { loadSettings, type LoadedSettings } from '../config/settings.js';

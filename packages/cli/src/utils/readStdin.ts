@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { debugLogger } from '@ls/cli-core';
+import { debugLogger } from '@google/ls-cli-core';
 
 /**
  * Truncates a string to fit within a UTF-8 byte limit without splitting

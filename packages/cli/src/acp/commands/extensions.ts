@@ -8,7 +8,7 @@ import {
   listExtensions,
   type Config,
   getErrorMessage,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 import { SettingScope } from '../../config/settings.js';
 import {
   ExtensionManager,

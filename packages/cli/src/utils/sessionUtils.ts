@@ -13,7 +13,7 @@ import {
   type ConversationRecord,
   type MessageRecord,
   loadConversationRecord,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 import * as fs from 'node:fs/promises';
 import path from 'node:path';
 import { stripUnsafeCharacters } from '../ui/utils/textUtils.js';

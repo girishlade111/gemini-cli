@@ -42,7 +42,7 @@
     },
     "languages": [
       {
-        "id": "gemini-diff-editable"
+        "id": "ls-diff-editable"
       }
     ],
     "commands": [
@@ -68,37 +68,37 @@
     "menus": {
       "commandPalette": [
         {
-          "command": "gemini.diff.accept",
-          "when": "gemini.diff.isVisible"
+          "command": "ls.diff.accept",
+          "when": "ls.diff.isVisible"
         },
         {
-          "command": "gemini.diff.cancel",
-          "when": "gemini.diff.isVisible"
+          "command": "ls.diff.cancel",
+          "when": "ls.diff.isVisible"
         }
       ],
       "editor/title": [
         {
-          "command": "gemini.diff.accept",
-          "when": "gemini.diff.isVisible",
+          "command": "ls.diff.accept",
+          "when": "ls.diff.isVisible",
           "group": "navigation"
         },
         {
-          "command": "gemini.diff.cancel",
-          "when": "gemini.diff.isVisible",
+          "command": "ls.diff.cancel",
+          "when": "ls.diff.isVisible",
           "group": "navigation"
         }
       ]
     },
     "keybindings": [
       {
-        "command": "gemini.diff.accept",
+        "command": "ls.diff.accept",
         "key": "ctrl+s",
-        "when": "gemini.diff.isVisible"
+        "when": "ls.diff.isVisible"
       },
       {
-        "command": "gemini.diff.accept",
+        "command": "ls.diff.accept",
         "key": "cmd+s",
-        "when": "gemini.diff.isVisible"
+        "when": "ls.diff.isVisible"
       }
     ]
   },

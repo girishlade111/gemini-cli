@@ -8,7 +8,7 @@ import {
   getErrorMessage,
   getMCPServerPrompts,
   type Config,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 import {
   CommandKind,
   type CommandContext,

@@ -10,11 +10,11 @@ import { activate } from './extension.js';
 import {
   IDE_DEFINITIONS,
   detectIdeFromEnv,
-} from '@ls/cli-core/src/ide/detect-ide.js';
+} from '@google/ls-cli-core/src/ide/detect-ide.js';
 
-vi.mock('@ls/cli-core/src/ide/detect-ide.js', async () => {
+vi.mock('@google/ls-cli-core/src/ide/detect-ide.js', async () => {
   const actual = await vi.importActual(
-    '@ls/cli-core/src/ide/detect-ide.js',
+    '@google/ls-cli-core/src/ide/detect-ide.js',
   );
   return {
     ...actual,

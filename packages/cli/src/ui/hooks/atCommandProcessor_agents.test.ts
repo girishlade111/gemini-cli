@@ -10,7 +10,7 @@ import type {
   Config,
   AgentDefinition,
   MessageBus,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 import {
   FileDiscoveryService,
   GlobTool,
@@ -19,7 +19,7 @@ import {
   ToolRegistry,
   COMMON_IGNORE_PATTERNS,
   ApprovalMode,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 import * as os from 'node:os';
 import type { UseHistoryManagerReturn } from './useHistoryManager.js';
 import * as fsPromises from 'node:fs/promises';

@@ -10,17 +10,17 @@ import * as path from 'node:path';
 import * as os from 'node:os';
 import { ExtensionManager } from './extension-manager.js';
 import { createTestMergedSettings } from './settings.js';
-import { cleanupTmpDir } from '@ls/cli-test-utils';
+import { cleanupTmpDir } from '@google/ls-cli-test-utils';
 import {
   loadAgentsFromDirectory,
   loadSkillsFromDir,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 
 let currentTempHome = '';
 
-vi.mock('@ls/cli-core', async (importOriginal) => {
+vi.mock('@google/ls-cli-core', async (importOriginal) => {
   const actual =
-    await importOriginal<typeof import('@ls/cli-core')>();
+    await importOriginal<typeof import('@google/ls-cli-core')>();
   return {
     ...actual,
     homedir: () => currentTempHome,

@@ -17,7 +17,7 @@ import {
 } from '../types.js';
 import { disableSkill, enableSkill } from '../../utils/skillSettings.js';
 
-import { getAdminErrorMessage, getErrorMessage } from '@ls/cli-core';
+import { getAdminErrorMessage, getErrorMessage } from '@google/ls-cli-core';
 import {
   linkSkill,
   renderSkillActionFeedback,

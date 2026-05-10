@@ -12,7 +12,7 @@ import {
   type AnyDeclarativeTool,
   type Config,
   type ToolRegistry,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 import {
   AddMemoryCommand,
@@ -24,9 +24,9 @@ import {
 import type { CommandContext } from './types.js';
 
 // Mock the core functions
-vi.mock('@ls/cli-core', async (importOriginal) => {
+vi.mock('@google/ls-cli-core', async (importOriginal) => {
   const actual =
-    await importOriginal<typeof import('@ls/cli-core')>();
+    await importOriginal<typeof import('@google/ls-cli-core')>();
   return {
     ...actual,
     showMemory: vi.fn(),

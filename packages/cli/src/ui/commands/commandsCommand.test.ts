@@ -5,7 +5,7 @@
  */
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { Storage, type Config } from '@ls/cli-core';
+import { Storage, type Config } from '@google/ls-cli-core';
 import { commandsCommand } from './commandsCommand.js';
 import { MessageType } from '../types.js';
 import { createMockCommandContext } from '../../test-utils/mockCommandContext.js';
@@ -14,10 +14,10 @@ import { FileCommandLoader } from '../../services/FileCommandLoader.js';
 
 vi.mock('../../services/FileCommandLoader.js');
 
-vi.mock('@ls/cli-core', async () => {
+vi.mock('@google/ls-cli-core', async () => {
   const actual = await vi.importActual<
-    typeof import('@ls/cli-core')
-  >('@ls/cli-core');
+    typeof import('@google/ls-cli-core')
+  >('@google/ls-cli-core');
   return {
     ...actual,
     Storage: class extends actual.Storage {

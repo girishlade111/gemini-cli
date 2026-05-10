@@ -9,7 +9,7 @@ import * as fs from 'node:fs';
 import * as path from 'node:path';
 import * as os from 'node:os';
 import { ExtensionManager } from './extension-manager.js';
-import { debugLogger } from '@ls/cli-core';
+import { debugLogger } from '@google/ls-cli-core';
 import { createTestMergedSettings } from './settings.js';
 import { createExtension } from '../test-utils/createExtension.js';
 import { EXTENSIONS_DIRECTORY_NAME } from './extensions/variables.js';
@@ -24,9 +24,9 @@ vi.mock('node:os', async (importOriginal) => {
   };
 });
 
-// Mock @ls/cli-core
-vi.mock('@ls/cli-core', async (importOriginal) => {
-  const core = await importOriginal<typeof import('@ls/cli-core')>();
+// Mock @google/ls-cli-core
+vi.mock('@google/ls-cli-core', async (importOriginal) => {
+  const core = await importOriginal<typeof import('@google/ls-cli-core')>();
   return {
     ...core,
     homedir: mockHomedir,

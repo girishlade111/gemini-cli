@@ -10,7 +10,7 @@ import { EventEmitter } from 'node:events';
 import {
   enableKittyKeyboardProtocol,
   enableModifyOtherKeys,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 import * as fs from 'node:fs';
 
 // Mock fs
@@ -19,7 +19,7 @@ vi.mock('node:fs', () => ({
 }));
 
 // Mock core
-vi.mock('@ls/cli-core', () => ({
+vi.mock('@google/ls-cli-core', () => ({
   debugLogger: {
     log: vi.fn(),
     warn: vi.fn(),

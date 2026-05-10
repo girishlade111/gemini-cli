@@ -18,7 +18,7 @@ import {
   type SubagentActivityItem,
   type SubagentActivityMessage,
   AGENT_TOOL_NAME,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 import { useCallback, useState, useMemo, useEffect, useRef } from 'react';
 
 // Re-exporting types compatible with hook expectations

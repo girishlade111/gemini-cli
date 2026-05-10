@@ -25,16 +25,16 @@ import {
   type LoadedTrustedFolders,
 } from '../../config/trustedFolders.js';
 import * as trustedFolders from '../../config/trustedFolders.js';
-import { coreEvents, ExitCodes, isHeadlessMode } from '@ls/cli-core';
+import { coreEvents, ExitCodes, isHeadlessMode } from '@google/ls-cli-core';
 import { MessageType } from '../types.js';
 
 const mockedCwd = vi.hoisted(() => vi.fn().mockReturnValue('/mock/cwd'));
 const mockedExit = vi.hoisted(() => vi.fn());
 
-vi.mock('@ls/cli-core', async () => {
+vi.mock('@google/ls-cli-core', async () => {
   const actual = await vi.importActual<
-    typeof import('@ls/cli-core')
-  >('@ls/cli-core');
+    typeof import('@google/ls-cli-core')
+  >('@google/ls-cli-core');
   return {
     ...actual,
     isHeadlessMode: vi.fn().mockReturnValue(false),

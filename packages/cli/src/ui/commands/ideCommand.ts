@@ -11,13 +11,13 @@ import {
   logIdeConnection,
   IdeConnectionEvent,
   IdeConnectionType,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 import {
   getIdeInstaller,
   IDEConnectionStatus,
   ideContextStore,
   GEMINI_CLI_COMPANION_EXTENSION_NAME,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 import path from 'node:path';
 import type {
   CommandContext,

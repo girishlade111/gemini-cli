@@ -7,7 +7,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import * as fs from 'node:fs/promises';
 import * as path from 'node:path';
-import { debugLogger, isNodeError, Storage } from '@ls/cli-core';
+import { debugLogger, isNodeError, Storage } from '@google/ls-cli-core';
 
 const MAX_HISTORY_LENGTH = 100;
 

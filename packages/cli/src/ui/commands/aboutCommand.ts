@@ -16,7 +16,7 @@ import {
   UserAccountManager,
   debugLogger,
   getVersion,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 
 export const aboutCommand: SlashCommand = {
   name: 'about',

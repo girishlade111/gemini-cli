@@ -9,10 +9,10 @@ import { authCommand } from './authCommand.js';
 import { type CommandContext } from './types.js';
 import { createMockCommandContext } from '../../test-utils/mockCommandContext.js';
 import { SettingScope } from '../../config/settings.js';
-import type { GeminiClient } from '@ls/cli-core';
+import type { GeminiClient } from '@google/ls-cli-core';
 
-vi.mock('@ls/cli-core', async () => {
-  const actual = await vi.importActual('@ls/cli-core');
+vi.mock('@google/ls-cli-core', async () => {
+  const actual = await vi.importActual('@google/ls-cli-core');
   return {
     ...actual,
     clearCachedCredentialFile: vi.fn().mockResolvedValue(undefined),
@@ -79,7 +79,7 @@ describe('authCommand', () => {
       expect(logoutCommand?.name).toBe('signout');
 
       const { clearCachedCredentialFile } = await import(
-        '@ls/cli-core'
+        '@google/ls-cli-core'
       );
 
       await logoutCommand!.action!(mockContext, '');

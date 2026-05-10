@@ -13,7 +13,7 @@ import {
   type ExtensionInstallMetadata,
   type GeminiCLIExtension,
   coreEvents,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 import { ExtensionManager } from '../extension-manager.js';
 import { createTestMergedSettings } from '../settings.js';
 import { isWorkspaceTrusted } from '../trustedFolders.js';
@@ -42,9 +42,9 @@ vi.mock('node:fs', async (importOriginal) => {
   };
 });
 
-vi.mock('@ls/cli-core', async (importOriginal) => {
+vi.mock('@google/ls-cli-core', async (importOriginal) => {
   const actual =
-    await importOriginal<typeof import('@ls/cli-core')>();
+    await importOriginal<typeof import('@google/ls-cli-core')>();
   return {
     ...actual,
     KeychainTokenStorage: vi.fn(),

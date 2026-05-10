@@ -13,7 +13,7 @@ import {
 import {
   writeToStderr,
   type AdminControlsSettings,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 
 export async function relaunchOnExitCode(runner: () => Promise<number>) {
   while (true) {

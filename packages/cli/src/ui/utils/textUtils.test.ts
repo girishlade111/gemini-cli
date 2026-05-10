@@ -8,7 +8,7 @@ import { describe, it, expect } from 'vitest';
 import type {
   SerializableConfirmationDetails,
   ToolEditConfirmationDetails,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 import {
   escapeAnsiCtrlCodes,
   stripUnsafeCharacters,

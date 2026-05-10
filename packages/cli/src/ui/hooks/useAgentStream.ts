@@ -21,7 +21,7 @@ import {
   type AgentProtocol,
   type Logger,
   type Part,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 import type {
   HistoryItemWithoutId,
   LoopDetectionConfirmationRequest,

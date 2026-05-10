@@ -13,7 +13,7 @@ import {
   spawnAsync,
   escapePath,
   Storage,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 
 /**
  * Supported image file extensions based on Gemini API.

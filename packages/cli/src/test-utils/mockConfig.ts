@@ -5,8 +5,8 @@
  */
 
 import { vi } from 'vitest';
-import { NoopSandboxManager } from '@ls/cli-core';
-import type { Config } from '@ls/cli-core';
+import { NoopSandboxManager } from '@google/ls-cli-core';
+import type { Config } from '@google/ls-cli-core';
 import {
   createTestMergedSettings,
   type LoadedSettings,

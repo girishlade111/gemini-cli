@@ -34,7 +34,7 @@ import {
   isNodeError,
   REFERENCE_CONTENT_START,
   InvalidStreamError,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 import * as acp from '@agentclientprotocol/sdk';
 import type { Part, FunctionCall } from '@google/genai';
 import type { LoadedSettings } from '../config/settings.js';

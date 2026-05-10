@@ -18,7 +18,7 @@ import {
   type Storage,
   type MessageRecord,
   CoreToolCallStatus,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 import * as fs from 'node:fs/promises';
 import path from 'node:path';
 import { randomUUID } from 'node:crypto';

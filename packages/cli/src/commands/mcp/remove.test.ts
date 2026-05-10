@@ -19,7 +19,7 @@ import { removeCommand } from './remove.js';
 import * as fs from 'node:fs';
 import * as path from 'node:path';
 import * as os from 'node:os';
-import { GEMINI_DIR, debugLogger } from '@ls/cli-core';
+import { GEMINI_DIR, debugLogger } from '@google/ls-cli-core';
 
 vi.mock('fs', async (importOriginal) => {
   const actualFs = await importOriginal<typeof fs>();

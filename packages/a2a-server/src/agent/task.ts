@@ -38,7 +38,7 @@ import {
   processRestorableToolCalls,
   MessageBusType,
   type ToolCallsUpdateMessage,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 import {
   type ExecutionEventBus,
   type RequestContext,

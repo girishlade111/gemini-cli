@@ -13,18 +13,18 @@ import {
   afterEach,
   type MockInstance,
 } from 'vitest';
-import { type Config } from '@ls/cli-core';
+import { type Config } from '@google/ls-cli-core';
 import { handleList, listCommand } from './list.js';
 import { loadSettings, type LoadedSettings } from '../../config/settings.js';
 import { loadCliConfig } from '../../config/config.js';
 import chalk from 'chalk';
 
-vi.mock('@ls/cli-core', async (importOriginal) => {
+vi.mock('@google/ls-cli-core', async (importOriginal) => {
   const { mockCoreDebugLogger } = await import(
     '../../test-utils/mockDebugLogger.js'
   );
   return mockCoreDebugLogger(
-    await importOriginal<typeof import('@ls/cli-core')>(),
+    await importOriginal<typeof import('@google/ls-cli-core')>(),
     {
       stripAnsi: false,
     },

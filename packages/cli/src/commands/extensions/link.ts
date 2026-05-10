@@ -10,7 +10,7 @@ import {
   debugLogger,
   getErrorMessage,
   type ExtensionInstallMetadata,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 
 import {
   INSTALL_WARNING_MESSAGE,

@@ -14,7 +14,7 @@ import {
   loadConversationRecord,
   type Config,
   type ResumedSessionData,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 import {
   convertSessionToHistoryFormats,
   type SessionInfo,

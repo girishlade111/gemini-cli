@@ -16,7 +16,7 @@ import type {
   CommandActionReturn,
   AgentDefinition,
   AgentLoopContext,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 import type { LoadedSettings } from '../../config/settings.js';
 import type { UseHistoryManagerReturn } from '../hooks/useHistoryManager.js';
 import type { SessionStatsState } from '../contexts/SessionContext.js';

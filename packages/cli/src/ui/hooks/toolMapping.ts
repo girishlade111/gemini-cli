@@ -11,7 +11,7 @@ import {
   debugLogger,
   CoreToolCallStatus,
   type SubagentActivityItem,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 import {
   type HistoryItemToolGroup,
   type IndividualToolCallDisplay,

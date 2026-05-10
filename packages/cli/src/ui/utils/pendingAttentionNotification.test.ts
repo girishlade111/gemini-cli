@@ -5,7 +5,7 @@
  */
 
 import { describe, expect, it } from 'vitest';
-import { CoreToolCallStatus } from '@ls/cli-core';
+import { CoreToolCallStatus } from '@google/ls-cli-core';
 import { getPendingAttentionNotification } from './pendingAttentionNotification.js';
 
 describe('getPendingAttentionNotification', () => {

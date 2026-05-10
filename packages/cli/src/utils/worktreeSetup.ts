@@ -9,7 +9,7 @@ import {
   createWorktreeService,
   writeToStderr,
   type WorktreeInfo,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 
 /**
  * Sets up a git worktree for parallel sessions.

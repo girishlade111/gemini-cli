@@ -5,8 +5,8 @@
  */
 
 import fs from 'node:fs';
-import { debugLogger } from '@ls/cli-core';
-import type { GemmaModelRouterSettings } from '@ls/cli-core';
+import { debugLogger } from '@google/ls-cli-core';
+import type { GemmaModelRouterSettings } from '@google/ls-cli-core';
 import { getBinaryPath, isServerRunning } from '../commands/gemma/platform.js';
 import { DEFAULT_PORT } from '../commands/gemma/constants.js';
 

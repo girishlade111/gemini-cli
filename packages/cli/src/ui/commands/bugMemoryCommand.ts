@@ -7,7 +7,7 @@
 import { stat } from 'node:fs/promises';
 import path from 'node:path';
 import process from 'node:process';
-import { debugLogger } from '@ls/cli-core';
+import { debugLogger } from '@google/ls-cli-core';
 import {
   type CommandContext,
   type SlashCommand,

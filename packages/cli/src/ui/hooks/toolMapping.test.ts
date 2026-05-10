@@ -19,7 +19,7 @@ import {
   type WaitingToolCall,
   type CancelledToolCall,
   CoreToolCallStatus,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 import { ToolCallStatus, mapCoreStatusToDisplayStatus } from '../types.js';
 
 describe('toolMapping', () => {

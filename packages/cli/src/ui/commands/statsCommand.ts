@@ -14,7 +14,7 @@ import { formatDuration } from '../utils/formatters.js';
 import {
   UserAccountManager,
   getG1CreditBalance,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 import {
   type CommandContext,
   type SlashCommand,

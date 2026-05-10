@@ -17,8 +17,8 @@ import {
   debugLogger,
   applyAdminAllowlist,
   getAdminBlockedMcpServersMessage,
-} from '@ls/cli-core';
-import type { MCPServerConfig } from '@ls/cli-core';
+} from '@google/ls-cli-core';
+import type { MCPServerConfig } from '@google/ls-cli-core';
 import { Client } from '@modelcontextprotocol/sdk/client/index.js';
 import { ExtensionManager } from '../../config/extension-manager.js';
 import {

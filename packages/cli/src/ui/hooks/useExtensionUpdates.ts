@@ -9,7 +9,7 @@ import {
   checkExhaustive,
   getErrorMessage,
   type GeminiCLIExtension,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 import {
   ExtensionUpdateState,
   extensionUpdatesReducer,

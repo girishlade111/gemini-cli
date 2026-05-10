@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import type { Config } from '@ls/cli-core';
+import type { Config } from '@google/ls-cli-core';
 import {
   OutputFormat,
   JsonFormatter,
@@ -20,7 +20,7 @@ import {
   coreEvents,
   getErrorType,
   getErrorMessage,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 import { runSyncCleanup } from './cleanup.js';
 
 interface ErrorWithCode extends Error {

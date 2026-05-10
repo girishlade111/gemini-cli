@@ -14,16 +14,16 @@ import {
   debugLogger,
   TOOL_OUTPUTS_DIR,
   Storage,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 import type { Settings } from '../config/settings.js';
 import {
   cleanupExpiredSessions,
   cleanupToolOutputFiles,
 } from './sessionCleanup.js';
 
-vi.mock('@ls/cli-core', async (importOriginal) => {
+vi.mock('@google/ls-cli-core', async (importOriginal) => {
   const actual =
-    await importOriginal<typeof import('@ls/cli-core')>();
+    await importOriginal<typeof import('@google/ls-cli-core')>();
   return {
     ...actual,
     debugLogger: {

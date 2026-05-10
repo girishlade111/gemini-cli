@@ -9,7 +9,7 @@ import {
   getToolCallDataSchema,
   isNodeError,
   performRestore,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 import * as fs from 'node:fs/promises';
 import * as path from 'node:path';
 import type {

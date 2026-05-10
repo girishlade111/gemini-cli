@@ -47,9 +47,9 @@ vi.mock('node:os', () => ({
   platform: mocks.platform,
 }));
 
-vi.mock('@ls/cli-core', async (importOriginal) => {
+vi.mock('@google/ls-cli-core', async (importOriginal) => {
   const actual =
-    await importOriginal<typeof import('@ls/cli-core')>();
+    await importOriginal<typeof import('@google/ls-cli-core')>();
   return {
     ...actual,
     homedir: mocks.homedir,

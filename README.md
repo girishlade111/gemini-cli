@@ -2,7 +2,7 @@
 
 [![LS CLI CI](https://github.com/ls-cli/ls-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/ls-cli/ls-cli/actions/workflows/ci.yml)
 [![LS CLI E2E (Chained)](https://github.com/ls-cli/ls-cli/actions/workflows/chained_e2e.yml/badge.svg)](https://github.com/ls-cli/ls-cli/actions/workflows/chained_e2e.yml)
-[![Version](https://img.shields.io/npm/v/@ls/cli)](https://www.npmjs.com/package/@ls/cli)
+[![Version](https://img.shields.io/npm/v/@google/ls-cli)](https://www.npmjs.com/package/@google/ls-cli)
 [![License](https://img.shields.io/github/license/ls-cli/ls-cli)](https://github.com/ls-cli/ls-cli/blob/main/LICENSE)
 
 ![LS CLI Screenshot](/docs/assets/ls-screenshot.png)
@@ -38,13 +38,13 @@ for recommended system specifications and a detailed installation guide.
 
 ```bash
 # Using npx (no installation required)
-npx @ls/cli
+npx @google/ls-cli
 ```
 
 #### Install globally with npm
 
 ```bash
-npm install -g @ls/cli
+npm install -g @google/ls-cli
 ```
 
 #### Install globally with Homebrew (macOS/Linux)
@@ -67,7 +67,7 @@ conda create -y -n ls_env -c conda-forge nodejs
 conda activate ls_env
 
 # Install LS CLI globally via npm (inside the environment)
-npm install -g @ls/cli
+npm install -g @google/ls-cli
 ```
 
 ## Release Channels
@@ -81,7 +81,7 @@ releases will not have been fully vetted and may contain regressions or other
 outstanding issues. Please help us test and install with `preview` tag.
 
 ```bash
-npm install -g @ls/cli@preview
+npm install -g @google/ls-cli@preview
 ```
 
 ### Stable
@@ -91,7 +91,7 @@ npm install -g @ls/cli@preview
   and validations. Use `latest` tag.
 
 ```bash
-npm install -g @ls/cli@latest
+npm install -g @google/ls-cli@latest
 ```
 
 ### Nightly
@@ -101,7 +101,7 @@ npm install -g @ls/cli@latest
   there are pending validations and issues. Use `nightly` tag.
 
 ```bash
-npm install -g @ls/cli@nightly
+npm install -g @google/ls-cli@nightly
 ```
 
 ## 📋 Key Features
@@ -374,7 +374,7 @@ Check our [Official Roadmap](./ROADMAP.md) for planned features and priorities.
 - **[Official Roadmap](./ROADMAP.md)** - See what's coming next.
 - **[Changelog](https://www.lscli.com/docs/changelogs)** - See recent
   notable updates.
-- **[NPM Package](https://www.npmjs.com/package/@ls/cli)** - Package
+- **[NPM Package](https://www.npmjs.com/package/@google/ls-cli)** - Package
   registry.
 - **[GitHub Issues](https://github.com/ls-cli/ls-cli/issues)** -
   Report bugs or request features.

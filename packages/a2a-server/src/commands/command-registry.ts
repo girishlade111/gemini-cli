@@ -5,7 +5,7 @@
  */
 
 import { MemoryCommand } from './memory.js';
-import { debugLogger } from '@ls/cli-core';
+import { debugLogger } from '@google/ls-cli-core';
 import { ExtensionsCommand } from './extensions.js';
 import { InitCommand } from './init.js';
 import { RestoreCommand } from './restore.js';

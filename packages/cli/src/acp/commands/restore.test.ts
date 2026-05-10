@@ -12,14 +12,14 @@ import {
   getToolCallDataSchema,
   isNodeError,
   performRestore,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 import type { CommandContext } from './types.js';
 import type { Mock } from 'vitest';
 
 vi.mock('node:fs/promises');
-vi.mock('@ls/cli-core', async (importOriginal) => {
+vi.mock('@google/ls-cli-core', async (importOriginal) => {
   const actual =
-    await importOriginal<typeof import('@ls/cli-core')>();
+    await importOriginal<typeof import('@google/ls-cli-core')>();
   return {
     ...actual,
     getCheckpointInfoList: vi.fn(),

@@ -31,8 +31,8 @@ import {
   CoreToolCallStatus,
   type Config,
   type DiscoveredMCPResource,
-} from '@ls/cli-core';
-import * as core from '@ls/cli-core';
+} from '@google/ls-cli-core';
+import * as core from '@google/ls-cli-core';
 import * as os from 'node:os';
 import type { UseHistoryManagerReturn } from './useHistoryManager.js';
 import * as fsPromises from 'node:fs/promises';

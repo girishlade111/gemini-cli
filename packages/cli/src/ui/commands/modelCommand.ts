@@ -7,7 +7,7 @@
 import {
   ModelSlashCommandEvent,
   logModelSlashCommand,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 import {
   type CommandContext,
   CommandKind,

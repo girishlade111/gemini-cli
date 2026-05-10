@@ -15,7 +15,7 @@ import {
   debugLogger,
   getChannelFromVersion,
   RELEASE_CHANNEL_STABILITY,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 
 let _updateInProgress = false;
 

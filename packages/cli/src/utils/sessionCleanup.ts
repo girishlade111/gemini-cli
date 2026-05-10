@@ -15,7 +15,7 @@ import {
   type Config,
   deleteSessionArtifactsAsync,
   deleteSubagentSessionDirAndArtifactsAsync,
-} from '@ls/cli-core';
+} from '@google/ls-cli-core';
 import type { Settings, SessionRetentionSettings } from '../config/settings.js';
 import { getAllSessionFiles, type SessionFileEntry } from './sessionUtils.js';
 

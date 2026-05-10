@@ -39,7 +39,7 @@ fs.writeFileSync(
 );
 console.log('Wrote .npmrc for @ls-cli scope to packages/core/');
 
-// Update @ls/cli
+// Update @google/ls-cli
 updatePackageJson('packages/cli/package.json', (pkg) => {
   pkg.name = '@ls-cli/ls-cli';
   pkg.files = ['bundle/'];
@@ -55,12 +55,12 @@ updatePackageJson('packages/cli/package.json', (pkg) => {
   delete pkg.config; // Deletes the sandboxImageUri
 });
 
-// Update @ls/cli-a2a-server
+// Update @google/ls-cli-a2a-server
 updatePackageJson('packages/a2a-server/package.json', (pkg) => {
   pkg.name = '@ls-cli/ls-cli-a2a-server';
 });
 
-// Update @ls/cli-core
+// Update @google/ls-cli-core
 updatePackageJson('packages/core/package.json', (pkg) => {
   pkg.name = '@ls-cli/ls-cli-core';
 });

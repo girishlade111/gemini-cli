@@ -12,7 +12,7 @@ import { useShellHistory } from './useShellHistory.js';
 import * as fs from 'node:fs/promises';
 import * as path from 'node:path';
 import * as crypto from 'node:crypto';
-import { GEMINI_DIR } from '@ls/cli-core';
+import { GEMINI_DIR } from '@google/ls-cli-core';
 
 vi.mock('node:fs/promises', () => ({
   readFile: vi.fn(),
@@ -35,9 +35,9 @@ vi.mock('node:fs', async (importOriginal) => {
     mkdirSync: vi.fn(),
   };
 });
-vi.mock('@ls/cli-core', async (importOriginal) => {
+vi.mock('@google/ls-cli-core', async (importOriginal) => {
   const actual =
-    await importOriginal<typeof import('@ls/cli-core')>();
+    await importOriginal<typeof import('@google/ls-cli-core')>();
   const path = await import('node:path');
   class Storage {
     static getGlobalSettingsPath(): string {

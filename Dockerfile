@@ -81,12 +81,12 @@ ENV PATH=$PATH:/usr/local/share/npm-global/bin
 USER node
 
 # install ls-cli and clean up
-COPY --chown=node:node packages/cli/dist/google-ls-cli-*.tgz /tmp/ls-cli.tgz
-COPY --chown=node:node packages/core/dist/google-ls-cli-core-*.tgz /tmp/gemini-core.tgz
+COPY --chown=node:node packages/cli/dist/ls-cli-*.tgz /tmp/ls-cli.tgz
+COPY --chown=node:node packages/core/dist/ls-cli-core-*.tgz /tmp/gemini-core.tgz
 RUN npm install -g /tmp/gemini-core.tgz \
   && npm install -g /tmp/ls-cli.tgz \
-  && node -e "const fs=require('node:fs'); JSON.parse(fs.readFileSync('/usr/local/share/npm-global/lib/node_modules/@google/ls-cli/package.json','utf8')); JSON.parse(fs.readFileSync('/usr/local/share/npm-global/lib/node_modules/@google/ls-cli-core/package.json','utf8'));" \
-  && gemini --version > /dev/null \
+  && node -e "const fs=require('node:fs'); JSON.parse(fs.readFileSync('/usr/local/share/npm-global/lib/node_modules/@ls/cli/package.json','utf8')); JSON.parse(fs.readFileSync('/usr/local/share/npm-global/lib/node_modules/@ls/core/package.json','utf8'));" \
+  && ls --version > /dev/null \
   && npm cache clean --force \
   && rm -f /tmp/gemini-{cli,core}.tgz
 

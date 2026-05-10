@@ -1,20 +1,19 @@
 # Package overview
 
-This monorepo contains two main packages: `@google/ls-cli` and
-`@google/ls-cli-core`.
+This monorepo contains two main packages: `@ls/cli` and `@ls/core`.
 
-## `@google/ls-cli`
+## `@ls/cli`
 
-This is the main package for LS CLI. It is responsible for the user
-interface, command parsing, and all other user-facing functionality.
+This is the main package for LS CLI. It is responsible for the user interface,
+command parsing, and all other user-facing functionality.
 
 When this package is published, it is bundled into a single executable file.
-This bundle includes all of the package's dependencies, including
-`@google/ls-cli-core`. This means that whether a user installs the package
-with `npm install -g @google/ls-cli` or runs it directly with
-`npx @google/ls-cli`, they are using this single, self-contained executable.
+This bundle includes all of the package's dependencies, including `@ls/core`.
+This means that whether a user installs the package with
+`npm install -g @ls/cli` or runs it directly with `npx @ls/cli`, they are using
+this single, self-contained executable.
 
-## `@google/ls-cli-core`
+## `@ls/core`
 
 This package contains the core logic for interacting with the Gemini API. It is
 responsible for making API requests, handling authentication, and managing the
@@ -59,4 +58,4 @@ package that should be managed as part of the workspace.
 - **Simplified script execution**: You can run scripts in any package from the
   root of the project using the `--workspace` flag. For example, to run the
   `build` script in the `cli` package, you can run
-  `npm run build --workspace @google/ls-cli`.
+  `npm run build --workspace @ls/cli`.

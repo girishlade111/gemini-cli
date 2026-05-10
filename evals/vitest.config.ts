@@ -24,15 +24,12 @@ export default defineConfig({
     environment: 'node',
     globals: true,
     alias: {
-      '@google/ls-cli-core': path.resolve(
-        __dirname,
-        '../packages/core/index.ts',
-      ),
+      '@ls/core': path.resolve(__dirname, '../packages/core/index.ts'),
     },
     setupFiles: [path.resolve(__dirname, '../packages/cli/test-setup.ts')],
     server: {
       deps: {
-        inline: [/@google\/ls-cli-core/],
+        inline: [/@ls\/core/],
       },
     },
   },

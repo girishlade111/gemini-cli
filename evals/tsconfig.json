@@ -3,8 +3,8 @@
   "compilerOptions": {
     "noEmit": true,
     "paths": {
-      "@google/ls-cli-core": ["../packages/core/index.ts"],
-      "@google/ls-cli": ["../packages/cli/index.ts"]
+      "@ls/core": ["../packages/core/index.ts"],
+      "@ls/cli": ["../packages/cli/index.ts"]
     }
   },
   "include": ["**/*.ts"],

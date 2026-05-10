@@ -1,21 +1,21 @@
 # Get started with LS CLI
 
-Welcome to LS CLI! This guide will help you install, configure, and start
-using LS CLI to enhance your workflow right from your terminal.
+Welcome to LS CLI! This guide will help you install, configure, and start using
+LS CLI to enhance your workflow right from your terminal.
 
 ## Quickstart: Install, authenticate, configure, and use LS CLI
 
 LS CLI brings the power of advanced language models directly to your command
-line interface. As an AI-powered assistant, LS CLI can help you with a
-variety of tasks, from understanding and generating code to reviewing and
-editing documents.
+line interface. As an AI-powered assistant, LS CLI can help you with a variety
+of tasks, from understanding and generating code to reviewing and editing
+documents.
 
 ## Install
 
 The standard method to install and run LS CLI uses `npm`:
 
 ```bash
-npm install -g @google/ls-cli
+npm install -g @ls/cli
 ```
 
 Once LS CLI is installed, run LS CLI from your command line:
@@ -24,8 +24,7 @@ Once LS CLI is installed, run LS CLI from your command line:
 gemini
 ```
 
-For more installation options, see
-[LS CLI Installation](./installation.mdx).
+For more installation options, see [LS CLI Installation](./installation.mdx).
 
 ## Authenticate
 
@@ -59,9 +58,8 @@ To explore your configuration options, see
 
 ## Use
 
-Once installed and authenticated, you can start using LS CLI by issuing
-commands and prompts in your terminal. Ask it to generate code, explain files,
-and more.
+Once installed and authenticated, you can start using LS CLI by issuing commands
+and prompts in your terminal. Ask it to generate code, explain files, and more.
 
 <!-- prettier-ignore -->
 > [!NOTE]
@@ -71,8 +69,8 @@ and more.
 ### Rename your photographs based on content
 
 You can use LS CLI to automate file management tasks that require visual
-analysis. In this example, LS CLI renames images based on their actual
-subject matter.
+analysis. In this example, LS CLI renames images based on their actual subject
+matter.
 
 Scenario: You have a folder containing the following files:
 
@@ -100,8 +98,8 @@ photos/green_android_robot.png
 
 ### Explain a repository by reading its code
 
-LS CLI is effective for rapid codebase exploration. The following example
-shows how to ask LS CLI to fetch, analyze, and summarize a remote project.
+LS CLI is effective for rapid codebase exploration. The following example shows
+how to ask LS CLI to fetch, analyze, and summarize a remote project.
 
 Scenario: You want to understand how a popular open-source utility works by
 inspecting its code, not just its README.
@@ -142,8 +140,8 @@ colors. After analyzing the source code, here's how it works:
 
 ### Combine two spreadsheets into one spreadsheet
 
-LS CLI can process and transform data across multiple files. Use this
-capability to merge reports or reformat data sets without manual copying.
+LS CLI can process and transform data across multiple files. Use this capability
+to merge reports or reformat data sets without manual copying.
 
 Scenario: You have two .csv files: `Revenue - 2023.csv` and
 `Revenue - 2024.csv`. Each file contains monthly revenue figures.
@@ -154,8 +152,8 @@ Give LS CLI the following prompt:
 Combine the two .csv files into a single .csv file, with each year a different column.
 ```
 
-Result: LS CLI reads each file and then asks for permission to write a new
-file. Provide your permission and LS CLI provides the combined data:
+Result: LS CLI reads each file and then asks for permission to write a new file.
+Provide your permission and LS CLI provides the combined data:
 
 ```csv
 Month,2023,2024
@@ -188,8 +186,8 @@ Give LS CLI the following prompt:
 Write unit tests for Login.js.
 ```
 
-Result: LS CLI asks for permission to write a new file and creates a test
-for your login page.
+Result: LS CLI asks for permission to write a new file and creates a test for
+your login page.
 
 ## Check usage and quota
 

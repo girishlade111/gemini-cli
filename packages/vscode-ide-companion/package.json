@@ -1,9 +1,9 @@
 {
-  "name": "ls-cli-vscode-ide-companion",
-  "displayName": "LS CLI Companion",
+  "name": "@ls/vscode-companion",
+  "displayName": "LS CLI for VS Code",
   "description": "Enable LS CLI with direct access to your IDE workspace.",
   "version": "0.42.0-nightly.20260428.g59b2dea0e",
-  "publisher": "ls-cli",
+  "publisher": "ls",
   "icon": "assets/icon.png",
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
   "keywords": [
     "ls-cli",
     "ls cli",
+    "ai",
     "cli",
     "ide integration",
     "ide companion"
@@ -30,9 +31,9 @@
   ],
   "contributes": {
     "configuration": {
-      "title": "LS CLI",
+      "title": "LS",
       "properties": {
-        "ls-cli.debug.logging.enabled": {
+        "ls.debug.logging.enabled": {
           "type": "boolean",
           "default": false,
           "description": "Enable detailed logging for debugging the LS CLI Companion."

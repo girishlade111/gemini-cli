@@ -30,9 +30,9 @@
   ],
   "contributes": {
     "configuration": {
-      "title": "Gemini CLI",
+      "title": "LS CLI",
       "properties": {
-        "gemini-cli.debug.logging.enabled": {
+        "ls-cli.debug.logging.enabled": {
           "type": "boolean",
           "default": false,
           "description": "Enable detailed logging for debugging the Gemini CLI Companion."

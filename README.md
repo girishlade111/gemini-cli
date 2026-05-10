@@ -1,20 +1,19 @@
-# Gemini CLI
+# LS CLI
 
-[![Gemini CLI CI](https://github.com/google-gemini/gemini-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/google-gemini/gemini-cli/actions/workflows/ci.yml)
-[![Gemini CLI E2E (Chained)](https://github.com/google-gemini/gemini-cli/actions/workflows/chained_e2e.yml/badge.svg)](https://github.com/google-gemini/gemini-cli/actions/workflows/chained_e2e.yml)
-[![Version](https://img.shields.io/npm/v/@google/gemini-cli)](https://www.npmjs.com/package/@google/gemini-cli)
-[![License](https://img.shields.io/github/license/google-gemini/gemini-cli)](https://github.com/google-gemini/gemini-cli/blob/main/LICENSE)
-[![View Code Wiki](https://assets.codewiki.google/readme-badge/static.svg)](https://codewiki.google/github.com/google-gemini/gemini-cli?utm_source=badge&utm_medium=github&utm_campaign=github.com/google-gemini/gemini-cli)
+[![LS CLI CI](https://github.com/ls-cli/ls-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/ls-cli/ls-cli/actions/workflows/ci.yml)
+[![LS CLI E2E (Chained)](https://github.com/ls-cli/ls-cli/actions/workflows/chained_e2e.yml/badge.svg)](https://github.com/ls-cli/ls-cli/actions/workflows/chained_e2e.yml)
+[![Version](https://img.shields.io/npm/v/@ls/cli)](https://www.npmjs.com/package/@ls/cli)
+[![License](https://img.shields.io/github/license/ls-cli/ls-cli)](https://github.com/ls-cli/ls-cli/blob/main/LICENSE)
 
-![Gemini CLI Screenshot](/docs/assets/gemini-screenshot.png)
+![LS CLI Screenshot](/docs/assets/ls-screenshot.png)
 
-Gemini CLI is an open-source AI agent that brings the power of Gemini directly
+LS CLI is an open-source AI agent that brings the power of Gemini directly
 into your terminal. It provides lightweight access to Gemini, giving you the
 most direct path from your prompt to our model.
 
-Learn all about Gemini CLI in our [documentation](https://geminicli.com/docs/).
+Learn all about LS CLI in our [documentation](https://lscli.com/docs/).
 
-## 🚀 Why Gemini CLI?
+## 🚀 Why LS CLI?
 
 - **🎯 Free tier**: 60 requests/min and 1,000 requests/day with personal Google
   account.

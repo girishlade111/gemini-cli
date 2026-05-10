@@ -1,5 +1,5 @@
 {
-  "name": "@google/ls-cli-test-utils",
+  "name": "@ls/test-utils",
   "version": "0.42.0-nightly.20260428.g59b2dea0e",
   "private": true,
   "main": "src/index.ts",
@@ -10,7 +10,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@google/ls-cli-core": "file:../core",
+    "@ls/core": "file:../core",
     "@lydell/node-pty": "1.1.0",
     "asciichart": "^1.5.25",
     "strip-ansi": "^7.1.2",

@@ -1,5 +1,5 @@
 {
-  "name": "@google/ls-cli-sdk",
+  "name": "@ls/sdk",
   "version": "0.42.0-nightly.20260428.g59b2dea0e",
   "description": "LS CLI SDK",
   "license": "Apache-2.0",
@@ -22,7 +22,7 @@
     "dist"
   ],
   "dependencies": {
-    "@google/ls-cli-core": "file:../core",
+    "@ls/core": "file:../core",
     "zod": "^3.23.8",
     "zod-to-json-schema": "^3.23.1"
   },

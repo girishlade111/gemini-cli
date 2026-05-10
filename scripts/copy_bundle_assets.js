@@ -78,8 +78,8 @@ const devtoolsSrc = join(root, 'packages/devtools');
 const devtoolsDest = join(
   bundleDir,
   'node_modules',
-  '@google',
-  'gemini-cli-devtools',
+  '@ls',
+  'cli-devtools',
 );
 const devtoolsDistSrc = join(devtoolsSrc, 'dist');
 if (existsSync(devtoolsDistSrc)) {
@@ -101,7 +101,7 @@ const bundleMcpDest = join(bundleDir, 'bundled');
 if (!existsSync(bundleMcpSrc)) {
   console.error(
     `Error: chrome-devtools-mcp bundle not found at ${bundleMcpSrc}.\n` +
-      `Run "npm run bundle:browser-mcp -w @google/gemini-cli-core" first.`,
+      `Run "npm run bundle:browser-mcp -w @ls/cli-core" first.`,
   );
   process.exit(1);
 }

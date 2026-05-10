@@ -13,7 +13,7 @@ import os from 'node:os';
 import { spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import crypto from 'node:crypto';
-import { GEMINI_DIR } from '@google/ls-cli-core';
+import { GEMINI_DIR } from '@ls/core';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -43,10 +43,7 @@ export const WORKSPACE_SETTINGS_FILE = path.join(
 );
 
 export function getJson(url) {
-  const tmpFile = path.join(
-    os.tmpdir(),
-    `ls-cli-releases-${Date.now()}.json`,
-  );
+  const tmpFile = path.join(os.tmpdir(), `ls-cli-releases-${Date.now()}.json`);
   try {
     const result = spawnSync(
       'curl',
@@ -254,9 +251,7 @@ export async function ensureBinary(
   }
 
   const downloadUrl = asset.browser_download_url;
-  const tmpDir = fs.mkdtempSync(
-    path.join(os.tmpdir(), 'ls-cli-telemetry-'),
-  );
+  const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'ls-cli-telemetry-'));
   const archivePath = path.join(tmpDir, asset.name);
 
   try {

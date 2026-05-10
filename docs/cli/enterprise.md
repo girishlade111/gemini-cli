@@ -176,7 +176,7 @@ the enterprise settings are always loaded with the highest precedence.
 
 Administrators can create a script named `gemini` and place it in a directory
 that appears earlier in the user's `PATH` than the actual LS CLI binary (for
-example, `/usr/local/bin/gemini`).
+example, `/usr/local/bin/ls`).
 
 ```bash
 #!/bin/bash
@@ -201,8 +201,8 @@ exec "$REAL_GEMINI_PATH" "$@"
 
 By deploying this script, the `GEMINI_CLI_SYSTEM_SETTINGS_PATH` is set within
 the script's environment, and the `exec` command replaces the script process
-with the actual LS CLI process, which inherits the environment variable.
-This makes it significantly more difficult for a user to bypass the enforced
+with the actual LS CLI process, which inherits the environment variable. This
+makes it significantly more difficult for a user to bypass the enforced
 settings.
 
 **PowerShell Profile (Windows alternative):**
@@ -217,12 +217,11 @@ Add-Content -Path $PROFILE -Value '$env:GEMINI_CLI_SYSTEM_SETTINGS_PATH="C:\Prog
 ## User isolation in shared environments
 
 In shared compute environments (like ML experiment runners or shared build
-servers), you can isolate LS CLI state by overriding the user's home
-directory.
+servers), you can isolate LS CLI state by overriding the user's home directory.
 
-By default, LS CLI stores configuration and history in `~/.gemini`. You can
-use the `GEMINI_CLI_HOME` environment variable to point to a unique directory
-for a specific user or job. The CLI will create a `.gemini` folder inside the
+By default, LS CLI stores configuration and history in `~/.gemini`. You can use
+the `GEMINI_CLI_HOME` environment variable to point to a unique directory for a
+specific user or job. The CLI will create a `.gemini` folder inside the
 specified path.
 
 **macOS/Linux**
@@ -480,9 +479,9 @@ an environment variable, but it can also be enforced for custom tools via the
 
 ## Telemetry and auditing
 
-For auditing and monitoring purposes, you can configure LS CLI to send
-telemetry data to a central location. This lets you track tool usage and other
-events. For more information, see the [telemetry documentation](./telemetry.md).
+For auditing and monitoring purposes, you can configure LS CLI to send telemetry
+data to a central location. This lets you track tool usage and other events. For
+more information, see the [telemetry documentation](./telemetry.md).
 
 **Example:** Enable telemetry and send it to a local OTLP collector. If
 `otlpEndpoint` is not specified, it defaults to `http://localhost:4317`.
@@ -530,9 +529,9 @@ enforced one.
 
 For enterprises using Google Workspace, you can enforce that users only
 authenticate with their corporate Google accounts. This is a network-level
-control that is configured on a proxy server, not within LS CLI itself. It
-works by intercepting authentication requests to Google and adding a special
-HTTP header.
+control that is configured on a proxy server, not within LS CLI itself. It works
+by intercepting authentication requests to Google and adding a special HTTP
+header.
 
 This policy prevents users from logging in with personal Gmail accounts or other
 non-corporate Google accounts.

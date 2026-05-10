@@ -22,8 +22,7 @@ const mocks = vi.hoisted(() => ({
 }));
 
 vi.mock('@google/ls-cli-core', async (importOriginal) => {
-  const actual =
-    await importOriginal<typeof import('@google/ls-cli-core')>();
+  const actual = await importOriginal<typeof import('@google/ls-cli-core')>();
   return {
     ...actual,
     writeToStderr: mocks.writeToStderr,
@@ -229,12 +228,7 @@ describe('relaunchAppInChildProcess', () => {
       vi.stubEnv('IS_BINARY', 'true');
       // execArgv should be inherited, not duplicated in NODE_OPTIONS
       process.execArgv = ['--inspect=9229'];
-      process.argv = [
-        '/usr/bin/gemini',
-        '/usr/bin/gemini',
-        'command',
-        '--verbose',
-      ];
+      process.argv = ['/usr/bin/ls', '/usr/bin/ls', 'command', '--verbose'];
 
       const additionalNodeArgs = ['--max-old-space-size=8192'];
       const additionalScriptArgs: string[] = [];
@@ -262,7 +256,7 @@ describe('relaunchAppInChildProcess', () => {
       vi.stubEnv('IS_BINARY', 'true');
       vi.stubEnv('NODE_OPTIONS', '--existing-flag');
       process.execArgv = ['--inspect']; // inherited from env/binary, should not be duplicated
-      process.argv = ['/usr/bin/gemini', '/usr/bin/gemini', 'command'];
+      process.argv = ['/usr/bin/ls', '/usr/bin/ls', 'command'];
 
       // In our use case, these are simple flags like --max-old-space-size=X
       const additionalNodeArgs = ['--max-old-space-size=8192'];

@@ -33,7 +33,7 @@ If you installed the CLI globally (for example,
 flag to remove it.
 
 ```bash
-npm uninstall -g @ls/cli
+npm uninstall -g @google/ls-cli
 ```
 
 This command completely removes the package from your system.

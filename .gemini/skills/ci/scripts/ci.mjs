@@ -77,13 +77,13 @@ function generateTestCommand(failedFilesMap) {
       ['Job Error', 'Unknown File', 'Build Error', 'Lint Error'].includes(file)
     )
       continue;
-    let workspace = '@google/ls-cli';
+    let workspace = '@ls/cli';
     let relPath = file;
     if (file.startsWith('packages/core/')) {
-      workspace = '@google/ls-cli-core';
+      workspace = '@ls/core';
       relPath = file.replace('packages/core/', '');
     } else if (file.startsWith('packages/cli/')) {
-      workspace = '@google/ls-cli';
+      workspace = '@ls/cli';
       relPath = file.replace('packages/cli/', '');
     }
     relPath = relPath.replace(/^.*packages\/[^\/]+\//, '');

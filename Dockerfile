@@ -91,4 +91,4 @@ RUN npm install -g /tmp/gemini-core.tgz \
   && rm -f /tmp/gemini-{cli,core}.tgz
 
 # default entrypoint when none specified
-ENTRYPOINT ["/usr/local/share/npm-global/bin/gemini"]
+ENTRYPOINT ["/usr/local/share/npm-global/bin/ls"]

@@ -33,15 +33,12 @@ if (fs.existsSync(sourceBundleDir)) {
 
 // Overwrite the .npmrc in the core package to point to the GitHub registry.
 const coreNpmrcPath = path.resolve(rootDir, 'packages/core/.npmrc');
-fs.writeFileSync(
-  coreNpmrcPath,
-  '@ls-cli:registry=https://npm.pkg.github.com/',
-);
+fs.writeFileSync(coreNpmrcPath, '@ls-cli:registry=https://npm.pkg.github.com/');
 console.log('Wrote .npmrc for @ls-cli scope to packages/core/');
 
 // Update @google/ls-cli
 updatePackageJson('packages/cli/package.json', (pkg) => {
-  pkg.name = '@ls-cli/ls-cli';
+  pkg.name = '@google/ls-cli';
   pkg.files = ['bundle/'];
   pkg.bin = {
     ls: 'bundle/ls.js',
@@ -57,12 +54,12 @@ updatePackageJson('packages/cli/package.json', (pkg) => {
 
 // Update @google/ls-cli-a2a-server
 updatePackageJson('packages/a2a-server/package.json', (pkg) => {
-  pkg.name = '@ls-cli/ls-cli-a2a-server';
+  pkg.name = '@google/ls-cli-a2a-server';
 });
 
 // Update @google/ls-cli-core
 updatePackageJson('packages/core/package.json', (pkg) => {
-  pkg.name = '@ls-cli/ls-cli-core';
+  pkg.name = '@google/ls-cli-core';
 });
 
 console.log('Successfully prepared packages for GitHub release.');

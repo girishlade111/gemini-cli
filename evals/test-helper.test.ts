@@ -10,7 +10,6 @@ import path from 'node:path';
 import { internalEvalTest } from './test-helper.js';
 import { TestRig } from '@google/ls-cli-test-utils';
 
-// Mock TestRig to control API success/failure
 vi.mock('@google/ls-cli-test-utils', () => {
   return {
     TestRig: vi.fn().mockImplementation(() => ({

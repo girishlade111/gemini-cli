@@ -1,5 +1,5 @@
 {
-  "name": "@google/gemini-cli-sdk",
+  "name": "@ls/cli-sdk",
   "version": "0.42.0-nightly.20260428.g59b2dea0e",
   "description": "Gemini CLI SDK",
   "license": "Apache-2.0",

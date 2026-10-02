@@ -716,3 +716,11 @@ removal instructions.
 <p align="center">
   Built with ❤️ by Google and the open source community
 </p>
+
+---
+
+## About this fork
+
+This repository is maintained as part of [LadeStack](https://ladestack.in) — a collection of free, local-first tools and experiments by Girish Lade. It tracks upstream Google Gemini CLI with LadeStack-specific build scripts and automation under `scripts/`.
+
+Built by Girish Lade — https://ladestack.in
